@@ -253,7 +253,7 @@ class App extends React.Component {
   render() {
     return (
         <div className="app">
-          <Header 
+          <Header
             color1R={this.state.color1R}
             color1B={this.state.color1B}
             color1G={this.state.color1G}
@@ -267,7 +267,7 @@ class App extends React.Component {
             color4B={this.state.color4B}
             color4G={this.state.color4G}
           >
-          
+
           </Header>
           {/* <About />
           <Projects />

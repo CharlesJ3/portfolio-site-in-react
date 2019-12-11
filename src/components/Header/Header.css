@@ -1,0 +1,78 @@
+@keyframes reset1 {
+
+  0% {
+    top: 2%;
+    left: 2%;
+  }
+
+  100% {
+    top: 2%;
+    left: 1%;
+  }
+}
+
+
+@keyframes reset2 {
+
+  0% {
+    top: 9%;
+    left: 21%;
+  }
+
+  100% {
+    top: 19%;
+    left: 1%;
+  }
+}
+
+@keyframes reset3 {
+
+  0% {
+    top: 9%;
+    left: 57%;
+  }
+
+  100% {
+    top: 36%;
+    left: 1%;
+  }
+}
+
+@keyframes reset4 {
+
+  0% {
+    top: 2%;
+    left: 76%;
+  }
+
+  100% {
+    top: 53%;
+    left: 1%;
+  }
+}
+
+@keyframes resetM1 {
+
+  0% {
+    top: 19%;
+    left: 15%;
+  }
+
+  100% {
+    top: 67%;
+    left: 4%;
+  }
+}
+
+@keyframes resetM2 {
+
+  0% {
+    top: 19%;
+    left: 78%;
+  }
+
+  100% {
+    top: 67%;
+    left: 8%;
+  }
+}

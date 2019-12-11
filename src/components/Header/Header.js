@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Header/Header.css';
 import styled from 'styled-components';
 
 const Menu1 = styled.div`
@@ -125,33 +126,52 @@ const Title = styled.p`
   margin-bottom: 1%;
 `;
 
+const updateMenu1 = () => {
+
+  document.querySelector('#menu1').className += "reset1";
+  document.querySelector('#menu2').className += "reset2";
+  document.querySelector('#menu3').className += "reset3";
+  document.querySelector('#menu4').className += "reset4";
+  document.querySelector('#menu5').className += "resetM1";
+  document.querySelector('#menu6').className += "resetM2";
+
+}
+
 export default class Header extends React.Component {
   render() {
     return (
       <div className="test">
         <Menu1 color1R={this.props.color1R} color1B={this.props.color1B} color1G={this.props.color1G}
-               color2R={this.props.color2R} color2B={this.props.color2B} color2G={this.props.color2G}  >
+               color2R={this.props.color2R} color2B={this.props.color2B} color2G={this.props.color2G}
+               className="menuSelect" id="menu1" onClick={updateMenu1}
+               >
           <Title color1R={this.props.color1R} color1B={this.props.color1B} color1G={this.props.color1G}
                  color2R={this.props.color2R} color2B={this.props.color2B} color2G={this.props.color2G}>About Me</Title>
         </Menu1>
-          <MiniMenu1>
-            <Title>...</Title>
+          <MiniMenu1 className="menuSelect" id="menu5">
+            <Title>HOME</Title>
           </MiniMenu1>
         <Menu2 color1R={this.props.color1R} color1B={this.props.color1B} color1G={this.props.color1G}
-               color2R={this.props.color2R} color2B={this.props.color2B} color2G={this.props.color2G} >
+               color2R={this.props.color2R} color2B={this.props.color2B} color2G={this.props.color2G}
+               className="menuSelect" id="menu2"
+               >
           <Title color1R={this.props.color1R} color1B={this.props.color1B} color1G={this.props.color1G}
                  color2R={this.props.color2R} color2B={this.props.color2B} color2G={this.props.color2G}>Games I've Built</Title>
         </Menu2>
         <Menu3 color1R={this.props.color1R} color1B={this.props.color1B} color1G={this.props.color1G}
-               color2R={this.props.color2R} color2B={this.props.color2B} color2G={this.props.color2G} >
+               color2R={this.props.color2R} color2B={this.props.color2B} color2G={this.props.color2G}
+               className="menuSelect" id="menu3"
+               >
           <Title color1R={this.props.color1R} color1B={this.props.color1B} color1G={this.props.color1G}
                  color2R={this.props.color2R} color2B={this.props.color2B} color2G={this.props.color2G}>Projects</Title>
         </Menu3>
-          <MiniMenu2>
-            <Title>...</Title>
+          <MiniMenu2 className="menuSelect" id="menu6">
+            <Title>Built With</Title>
           </MiniMenu2>
         <Menu4 color1R={this.props.color1R} color1B={this.props.color1B} color1G={this.props.color1G}
-               color2R={this.props.color2R} color2B={this.props.color2B} color2G={this.props.color2G} >
+               color2R={this.props.color2R} color2B={this.props.color2B} color2G={this.props.color2G}
+               className="menuSelect" id="menu4"
+               >
           <Title color1R={this.props.color1R} color1B={this.props.color1B} color1G={this.props.color1G}
                  color2R={this.props.color2R} color2B={this.props.color2B} color2G={this.props.color2G}>Hobbies</Title>
         </Menu4>
