@@ -160,6 +160,7 @@ class App extends React.Component {
       ring7, ring8, ring9, ring10, ring11, ring12,
       ring13, ring14, ring15, ring16, ring17, ring18,
     );
+);
 
     renderer.render(scene, camera);
 

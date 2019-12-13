@@ -76,3 +76,37 @@
     left: 8%;
   }
 }
+
+.reset1 {
+  animation: reset1 3s linear;
+  animation-fill-mode: forwards;
+}
+
+.reset2 {
+  animation: reset2 2.8s linear;
+  animation-fill-mode: forwards;
+}
+
+.reset3 {
+  animation: reset3 2.6s linear;
+  animation-fill-mode: forwards;
+}
+
+.reset4 {
+  animation: reset4 2.4s linear;
+  animation-fill-mode: forwards;
+}
+
+.resetM1 {
+  animation: resetM1 2.2s linear;
+  animation-fill-mode: forwards;
+}
+
+.resetM2 {
+  animation: resetM2 2s linear;
+  animation-fill-mode: forwards;
+}
+
+.menuSelect {
+  cursor: pointer;
+}

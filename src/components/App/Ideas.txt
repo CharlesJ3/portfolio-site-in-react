@@ -1,0 +1,14 @@
+Clicking any of the buttons will move all items to the left side of the screen
+  issue - uses classes for styled divs so I can't just add/remove all classes for this part
+    I fixed this in my plinketto app; reference that if needed
+
+Update Lighting on Click
+
+Update Lighting on Click
+
+Animate to new colors in Menu
+
+Create Lightning in ThreeJS
+
+  Lightning Strikes the Gear from a different angle everytime, changing it and the menu system
+    The color of the light is significant!
