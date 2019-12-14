@@ -10,26 +10,48 @@ class App extends React.Component {
     super();
 
     this.state = ({
-      //Color 1 - Orange
-      color1R: 225,
-      color1B: 21,
-      color1G: 82,
+      colors : {
+        //Color 1 - Orange
+        color1R: 225,
+        color1B: 21,
+        color1G: 82,
 
-      //Color 2 - Light Blue
-      color2R: 27,
-      color2B: 147,
-      color2G: 55,
+        //Color 2 - Light Blue
+        color2R: 27,
+        color2B: 147,
+        color2G: 55,
 
-      //Color 3 - Dark Blue
-      color3R: 15,
-      color3B: 226,
-      color3G: 12,
+        //Color 3 - Dark Blue
+        color3R: 15,
+        color3B: 226,
+        color3G: 12,
 
-      //Color 4 - Turquoise
-      color4R: 22,
-      color4B: 124,
-      color4G: 132,
+        //Color 4 - Turquoise
+        color4R: 22,
+        color4B: 124,
+        color4G: 132,
 
+        //Color 5 - Dark Blue
+        color5R: 15,
+        color5B: 26,
+        color5G: 123,
+
+        //Color 6 - Turquoise
+        color6R: 12,
+        color6B: 224,
+        color6G: 232,
+
+        //Color 7 - Pink
+        color7R: 25,
+        color7B: 221,
+        color7G: 22,
+
+        //Color 8 - Purple
+        color8R: 237,
+        color8B: 117,
+        color8G: 55,
+
+      },
       currentTab: 0,
     });
   }
@@ -71,16 +93,16 @@ class App extends React.Component {
     dirLight = new THREE.DirectionalLight( 'rgb(22,2,166)', .95 );
     dirLight2 = new THREE.DirectionalLight( 'rgb(24,30,66)', .95 );
 
-    dirLight.color.r = this.state.color1R;
-    dirLight.color.b = this.state.color1B;
-    dirLight.color.g = this.state.color1G;
+    dirLight.color.r = this.state.colors.color1R;
+    dirLight.color.b = this.state.colors.color1B;
+    dirLight.color.g = this.state.colors.color1G;
     dirLight.color.a = .5;
     dirLight.intensity = .0075;
     dirLight.needsUpdate = true;
 
-    dirLight2.color.r = this.state.color2R;
-    dirLight2.color.b = this.state.color2B;
-    dirLight2.color.g = this.state.color2G;
+    dirLight2.color.r = this.state.colors.color2R;
+    dirLight2.color.b = this.state.colors.color2B;
+    dirLight2.color.g = this.state.colors.color2G;
     dirLight2.color.a = .5;
     dirLight2.intensity = .0075;
     dirLight2.needsUpdate = true;
@@ -160,7 +182,7 @@ class App extends React.Component {
       ring7, ring8, ring9, ring10, ring11, ring12,
       ring13, ring14, ring15, ring16, ring17, ring18,
     );
-);
+
 
     renderer.render(scene, camera);
 
@@ -255,18 +277,7 @@ class App extends React.Component {
     return (
         <div className="app">
           <Header
-            color1R={this.state.color1R}
-            color1B={this.state.color1B}
-            color1G={this.state.color1G}
-            color2R={this.state.color2R}
-            color2B={this.state.color2B}
-            color2G={this.state.color2G}
-            color3R={this.state.color3R}
-            color3B={this.state.color3B}
-            color3G={this.state.color3G}
-            color4R={this.state.color4R}
-            color4B={this.state.color4B}
-            color4G={this.state.color4G}
+            colors={this.state.colors}
           >
 
           </Header>
