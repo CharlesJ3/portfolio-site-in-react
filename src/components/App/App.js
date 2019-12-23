@@ -293,17 +293,6 @@ class App extends React.Component {
 
       renderer.render(scene, camera);
 
-      /*IMPORTANT: State acts weird in render function, so call adjust values in state outside */
-      let ringStatus = 0;
-
-      const checkRingStatus = () => {
-        if (ring7.position.x >= 1 && ring7.position.x <= -1) {
-          ringStatus = 1;
-        } else if (ring7.position.x >= -5 && ring7.position.x <= 5) {
-          ringStatus = 2;
-        }
-      }
-
       /**
        * Update our lights when we want to swap menus
        */
@@ -328,6 +317,7 @@ class App extends React.Component {
           })
         }
     }
+
 
     //RENDER LOOP
     requestAnimationFrame(render);
@@ -418,5 +408,7 @@ class App extends React.Component {
     );
   }
 }
+
+
 
 export default App;
