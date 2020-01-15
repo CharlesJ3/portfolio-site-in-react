@@ -27,17 +27,31 @@ const About = (props) => {
     updatePos={props.updatePos}
     currentMenu={props.currentMenu}
   >
-    <div class="aboutContainer" id="aboutMain">
-      <div class="aboutContainer" id="about1">
+    <div id="aboutWrapper">
 
+      {/* Upper Left Section */}
+      <div className="aboutContainer" id="aboutMain">
+        <div className="aboutContainer" id="about1">
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum vestibulum sapien eget sollicitudin.
+          Nam viverra, sapien sed volutpat imperdiet, dui justo sagittis ante, non tincidunt velit ligula nec massa.
+          Integer dapibus pharetra nisl vitae tristique. Fusce tristique eros ut iaculis mollis.
+          Vivamus elementum lacus venenatis diam ultrices varius.
+          Proin maximus fermentum faucibus. Vivamus lobortis eu lacus eget feugiat.
+          Maecenas tincidunt nisl lorem, at rhoncus metus finibus vel. Sed ex quam, pretium eu finibus eget, sollicitudin vel est.
+        </p>
       </div>
-      <div class="aboutContainer" id="about2">
 
-      </div>
+      {/* Upper Right Section */}
+      <div className="aboutContainer" id="aboutPic1"></div>
+      <div className="aboutContainer" id="aboutPic2"></div>
+      <div className="aboutContainer" id="aboutPic3"></div>
 
-      {/* <div class="aboutContainer" id="about3">
-
-      </div> */}
+      {/* Bottom Left Section */}
+      <div className="aboutContainer" id="aboutPic4"></div>
+      <div className="aboutContainer" id="aboutPic5"></div>
+      <div className="aboutContainer" id="aboutPic6"></div>
     </div>
   </AboutDetails>
  )

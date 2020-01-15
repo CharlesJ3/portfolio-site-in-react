@@ -26,7 +26,21 @@ const Projects = (props) => {
     colors={props.colors}
     updatePos={props.updatePos}
     currentMenu={props.currentMenu}
-  />
+  >
+    <div id="projectsWrapper">
+      <div id="projectsHeader">
+        <button className="projectButtons">WEBSITES</button>
+        <button className="projectButtons">APP/SPAs</button>
+        <button className="projectButtons">CODEPEN</button>
+      </div>
+
+      <div id="projectsSection">
+        <div id="projectSection1">TEST1</div>
+        <div id="projectSection1">TEST2</div>
+        <div id="projectSection1">TEST3</div>
+      </div>
+    </div>
+  </ProjectsDetails>
  )
 }
 

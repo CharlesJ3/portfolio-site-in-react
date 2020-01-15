@@ -18,31 +18,93 @@
 }
 
 .gamesContainer {
-
+  display: flex;
 }
 
 #gamesTop, #gamesBottom {
-  border: 3px solid red;
   position: absolute;
   width: 97%;
-  height: 46%;
 }
 
 #gamesTop {
-  top: 1%;
+  top: 3%;
   left: 1%;
+  height: 56%;
 }
 
 #gamesBottom {
-  top: 51%;
+  top: 55%;
+  left: 1%;
+  height: 43%;
+}
+
+.gameSectionGames {
+  width: 50%;
+  border: 1px solid red;
+}
+
+.gameSectionArt {
+  width: 50%;
+  border: 1px solid red;
+}
+
+#gamesTop h2 {
+  text-align: center;
+  position: relative;
+  top: -4%;
+  border: 5px solid red;
+  width: 80%;
+  color: white;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.gameSectionName h2 {
+  text-align: center;
+  position: relative;
+  top: -7%;
+  z-index: 1;
+  border: 5px solid red;
+  width: 50%;
+  color: white;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.gameSectionDescription h2 {
+  text-align: center;
+  position: relative;
+  top: -7%;
+  z-index: 1;
+  border: 5px solid red;
+  width: 50%;
+  color: white;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.gameSectionName {
+  width: 50%;
+}
+
+.gameSectionDescription {
+  width: 50%;
+}
+
+.gameImageMain {
+  width: 38%;
+  border: 1px solid red;
+  height: 77%;
+  position: absolute;
+  top: 20%;
   left: 1%;
 }
 
-#gamesMain {
-  /* border: 3px solid red;
+.gameImageDescription {
+  width: 58%;
+  border: 1px solid red;
+  height: 77%;
   position: absolute;
-  top: 3%;
-  left: 3%;
-  width: 100%;
-  height: 100%; */
+  top: 20%;
+  left: 41%;
 }

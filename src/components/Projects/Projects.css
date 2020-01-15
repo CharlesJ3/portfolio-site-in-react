@@ -16,3 +16,41 @@
 .transitionMe {
 
 }
+
+.projectsWrapper{
+
+}
+
+#projectsHeader{
+  width: 95%;
+  height: 17%;
+  left: 2%;
+  top: 4%;
+  margin: 0 auto;
+  border: 1px solid red;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+#projectsSection {
+  width: 95%;
+  height: 75%;
+  left: 2%;
+  top: 23%;
+  border: 1px solid red;
+  position: absolute;
+}
+
+#projectsHeader button {
+  width: 29%;
+  height: 48%;
+  border: 1px solid red;
+  background-color: black;
+  color: white;
+  font-size: 2.5rem;
+}

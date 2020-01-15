@@ -23,9 +23,18 @@
 
 #about1, #about2, #about3 {
   border: 3px solid red;
-  position: absolute;
+  position: relative;
   width: 41%;
   height: 40%;
+}
+
+#aboutMain p {
+  color: white;
+  width: 90%;
+  padding-top: 10%;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0 auto;
 }
 
 #about1 {
@@ -50,4 +59,42 @@
   left: 3%;
   width: 45%;
   height: 50%;
+}
+
+#aboutPic1, #aboutPic2, #aboutPic3,
+#aboutPic4, #aboutPic5, #aboutPic6 {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  border: 3px solid red;
+}
+
+#aboutPic1 {
+  top: 27%;
+  right: 11%;
+}
+
+#aboutPic2 {
+  top: 9%;
+  right: 24%;
+}
+
+#aboutPic3 {
+  top: 5%;
+  right: 5%;
+}
+
+#aboutPic4 {
+  bottom: 1%;
+  left: 16%;
+}
+
+#aboutPic5 {
+  bottom: 19%;
+  left: 4%;
+}
+
+#aboutPic6 {
+  bottom: 23%;
+  left: 23%;
 }
