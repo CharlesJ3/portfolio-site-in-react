@@ -16,3 +16,38 @@
 .transitionMe {
 
 }
+
+.aboutContainer {
+
+}
+
+#about1, #about2, #about3 {
+  border: 3px solid red;
+  position: absolute;
+  width: 41%;
+  height: 40%;
+}
+
+#about1 {
+  top: 2%;
+  left: 2%;
+}
+
+#about2 {
+  top: 50%;
+  left: 9%;
+}
+
+#about3 {
+  top: 24%;
+  left: 55%;
+}
+
+#aboutMain {
+  border: 3px solid red;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  width: 45%;
+  height: 50%;
+}

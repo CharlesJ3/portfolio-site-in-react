@@ -27,7 +27,14 @@ const Games = (props) => {
     updatePos={props.updatePos}
     currentMenu={props.currentMenu}
   >
+    <div class="gamesContainer" id="gamesMain">
+      <div class="gamesContainer" id="gamesTop">
 
+      </div>
+      <div class="gamesContainer" id="gamesBottom">
+
+      </div>
+    </div>
   </GamesDetails>
  )
 }

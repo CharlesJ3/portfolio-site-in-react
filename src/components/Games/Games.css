@@ -16,3 +16,33 @@
 .transitionMe {
 
 }
+
+.gamesContainer {
+
+}
+
+#gamesTop, #gamesBottom {
+  border: 3px solid red;
+  position: absolute;
+  width: 97%;
+  height: 46%;
+}
+
+#gamesTop {
+  top: 1%;
+  left: 1%;
+}
+
+#gamesBottom {
+  top: 51%;
+  left: 1%;
+}
+
+#gamesMain {
+  /* border: 3px solid red;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  width: 100%;
+  height: 100%; */
+}

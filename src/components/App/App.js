@@ -391,20 +391,20 @@ class App extends React.Component {
 
   render() {
     return (
-        <div className="app">
-          <Header
-            colors={this.state.colors}
-            updateColors={this.updateColors}
-            updatePos={this.state.updatePos}
-            currentMenu={this.state.currentMenu}
-          >
-          </Header>
-          {/* <About />
-          <Projects />
-          <Hobbies />
-          <Contact />
-          <Footer /> */}
-        </div>
+      <div className="app">
+        <Header
+          colors={this.state.colors}
+          updateColors={this.updateColors}
+          updatePos={this.state.updatePos}
+          currentMenu={this.state.currentMenu}
+        >
+        </Header>
+        {/* <About />
+        <Projects />
+        <Hobbies />
+        <Contact />
+        <Footer /> */}
+      </div>
     );
   }
 }

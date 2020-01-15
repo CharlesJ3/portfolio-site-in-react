@@ -26,7 +26,20 @@ const About = (props) => {
     colors={props.colors}
     updatePos={props.updatePos}
     currentMenu={props.currentMenu}
-  />
+  >
+    <div class="aboutContainer" id="aboutMain">
+      <div class="aboutContainer" id="about1">
+
+      </div>
+      <div class="aboutContainer" id="about2">
+
+      </div>
+
+      {/* <div class="aboutContainer" id="about3">
+
+      </div> */}
+    </div>
+  </AboutDetails>
  )
 }
 

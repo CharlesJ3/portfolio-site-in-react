@@ -199,10 +199,10 @@ const Header = (props) => {
         className="menuSelect"
         id="menu3"
         onClick={() => updateMenu(3)}>
-        <Title colors={props.colors}>Projects</Title>
+        <Title colors={props.colors}>Projects and Extras</Title>
       </Menu3>
 
-      {console.log(props.currentMenu)};
+      {console.log(props.currentMenu)}
 
       <Projects
         colors={props.colors}
@@ -226,7 +226,7 @@ const Header = (props) => {
         id="menu4"
         onClick={() => updateMenu(4)}>
         <Title colors={props.colors}>
-          Hobbies
+          Hobbies and Links
         </Title>
       </Menu4>
 
