@@ -202,8 +202,6 @@ const Header = (props) => {
         <Title colors={props.colors}>Projects and Extras</Title>
       </Menu3>
 
-      {console.log(props.currentMenu)}
-
       <Projects
         colors={props.colors}
         updatePos={props.updatePos}

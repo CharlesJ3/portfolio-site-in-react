@@ -20,6 +20,52 @@ const ProjectsDetails = styled.div`
     rgba(${props => props.colors.currentColor1R}, ${props => props.colors.currentColor1G}, ${props => props.colors.currentColor1B}, .1) 100%);
 `;
 
+
+
+const projects = [{
+    type: 'admin',
+    currentProject: 0,
+    lastProject: 0,
+    nextProject: 1,
+  },{
+    type: 'site',
+    name: 'NSPF',
+    img: `url('../src/images/NSPF 1 About.PNG')`
+  },{
+    type: 'site',
+    name: 'WAHC',
+    img: '',
+  },{
+    type: 'site',
+    name: 'PHTA',
+    img: '',
+  },{
+    type: 'site',
+    name: 'NSPF/WAHC Combo',
+    img: '',
+  },{
+    type: 'site',
+    name: 'WAHCity',
+    img: '',
+  },{
+    type: 'site',
+    name: 'FIND ME',
+    img: '',
+  },{
+    type: 'site',
+    name: 'StepIntoSwim',
+    img: '',
+  },{
+    type: 'site',
+    name: 'Instructor Portals',
+    img: '',
+  },{
+    type: 'site',
+    name: 'My Site',
+    img: '',
+  },{
+}];
+
 const Projects = (props) => {
  return (
   <ProjectsDetails
@@ -35,7 +81,17 @@ const Projects = (props) => {
       </div>
 
       <div id="projectsSection">
-        <div id="projectSection1">TEST1</div>
+        <div id="projectSection1">
+          {projects.map(e => {
+            return e.type === 'site' ?
+              <p className="projectsItem" key={e.name} style={{backgroundImage: `${e.img}` }} >
+                {e.name} <br /><br />
+                <span className="imageHolderProjects" >
+
+                </span>
+              </p> : false;
+          })}
+        </div>
         <div id="projectSection1">TEST2</div>
         <div id="projectSection1">TEST3</div>
       </div>

@@ -156,7 +156,7 @@ class App extends React.Component {
           this.setState({
             updatePos: 3,
           })
-          console.log('now!')
+          // console.log('now!')
         }, 2000);
   }
 

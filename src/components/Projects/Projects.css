@@ -4,8 +4,8 @@
     opacity: 0;
   }
 
-  25% {
-    opacity: .26;
+  15% {
+    opacity: 1;
   }
 
   100% {
@@ -53,4 +53,18 @@
   background-color: black;
   color: white;
   font-size: 2.5rem;
+}
+
+.projectsItem{
+  color: white;
+  flex: 1 1 33%;
+  text-align: center;
+}
+
+#projectSection1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
 }
