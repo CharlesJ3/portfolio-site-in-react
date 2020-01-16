@@ -20,9 +20,8 @@ const ProjectsDetails = styled.div`
     rgba(${props => props.colors.currentColor1R}, ${props => props.colors.currentColor1G}, ${props => props.colors.currentColor1B}, .1) 100%);
 `;
 
-
-
-const projects = [{
+const projects = [
+  {
     type: 'admin',
     currentProject: 0,
     lastProject: 0,
@@ -30,7 +29,7 @@ const projects = [{
   },{
     type: 'site',
     name: 'NSPF',
-    img: `url('../src/images/NSPF 1 About.PNG')`
+    img: '../images/NSPF 1 About.PNG'
   },{
     type: 'site',
     name: 'WAHC',
@@ -64,7 +63,66 @@ const projects = [{
     name: 'My Site',
     img: '',
   },{
-}];
+    type: 'apps',
+    name: 'NSPF',
+    img: '../images/NSPF 1 About.PNG'
+  },{
+    type: 'apps',
+    name: 'NSPF',
+    img: '../images/NSPF 1 About.PNG'
+  },{
+    type: 'apps',
+    name: 'WAHC',
+    img: '',
+  },{
+    type: 'pens',
+    name: 'PHTA',
+    img: '',
+  },{
+    type: 'pens',
+    name: 'NSPF/WAHC Combo',
+    img: '',
+  },{
+    type: 'pens',
+    name: 'WAHCity',
+    img: '',
+  },{
+    type: 'pens',
+    name: 'FIND ME',
+    img: '',
+  },{
+    type: 'pens',
+    name: 'StepIntoSwim',
+    img: '',
+  },{
+    type: 'pens',
+    name: 'Instructor Portals',
+    img: '',
+  },{
+    type: 'pens',
+    name: 'My Site',
+    img: '',
+  },
+];
+
+const changeMenus = (currentMenu) => {
+  if(currentMenu === 1){
+    document.getElementById('projectSection1').style.display = 'flex';
+    document.getElementById('projectSection2').style.display = 'none';
+    document.getElementById('projectSection3').style.display = 'none';
+  } else if(currentMenu === 2){
+    document.getElementById('projectSection1').style.display = 'none';
+    document.getElementById('projectSection2').style.display = 'flex';
+    document.getElementById('projectSection3').style.display = 'none';
+    console.log('test');
+  } else if(currentMenu === 3){
+    document.getElementById('projectSection1').style.display = 'none';
+    document.getElementById('projectSection2').style.display = 'none';
+    document.getElementById('projectSection3').style.display = 'flex';
+  } else {
+    throw console.error(`You've accessed a page on accident. No menu exists`);
+  }
+}
 
 const Projects = (props) => {
  return (
@@ -75,25 +133,57 @@ const Projects = (props) => {
   >
     <div id="projectsWrapper">
       <div id="projectsHeader">
-        <button className="projectButtons">WEBSITES</button>
-        <button className="projectButtons">APP/SPAs</button>
-        <button className="projectButtons">CODEPEN</button>
+        <button className="projectButtons" id="projectSites" onClick={() => changeMenus(1)}>WEBSITES</button>
+        <button className="projectButtons" id="projectApps"  onClick={() => changeMenus(2)}>APP/SPAs</button>
+        <button className="projectButtons" id="projectPens"  onClick={() => changeMenus(3)}>CODEPENS</button>
       </div>
 
       <div id="projectsSection">
         <div id="projectSection1">
-          {projects.map(e => {
+          {projects.map((e,index) => {
             return e.type === 'site' ?
-              <p className="projectsItem" key={e.name} style={{backgroundImage: `${e.img}` }} >
+              <p className="projectsItem" key={e.name + index}>
                 {e.name} <br /><br />
-                <span className="imageHolderProjects" >
-
-                </span>
+                <img
+                  className="imageHolderProjects"
+                  src={e.img}
+                  width={'70%'}
+                  alt={e.name}
+                >
+                </img>
               </p> : false;
+            })}
+        </div>
+        <div id="projectSection2">
+          {projects.map((e,index) => {
+            return e.type === 'apps' ?
+            <p className="projectsItem" key={e.name + index}>
+              {e.name} <br /><br />
+              <img
+                className="imageHolderProjects"
+                src={e.img}
+                width={'70%'}
+                alt={e.name}
+              >
+              </img>
+            </p> : false;
           })}
         </div>
-        <div id="projectSection1">TEST2</div>
-        <div id="projectSection1">TEST3</div>
+        <div id="projectSection3">
+        {projects.map((e,index) => {
+          return e.type === 'pens' ?
+          <p className="projectsItem" key={e.name + index}>
+            {e.name} <br /><br />
+            <img
+              className="imageHolderProjects"
+              src={e.img}
+              width={'70%'}
+              alt={e.name}
+            >
+            </img>
+          </p> : false;
+        })}
+        </div>
       </div>
     </div>
   </ProjectsDetails>

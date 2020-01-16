@@ -44,6 +44,8 @@
   top: 23%;
   border: 1px solid red;
   position: absolute;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 #projectsHeader button {
@@ -55,16 +57,36 @@
   font-size: 2.5rem;
 }
 
-.projectsItem{
+.projectsItem {
   color: white;
-  flex: 1 1 33%;
+  flex: 1 1 40%;
   text-align: center;
 }
 
 #projectSection1 {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   justify-content: space-between;
   align-content: space-between;
   align-items: center;
+}
+
+#projectSection2 {
+  display: none;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+}
+
+#projectSection3 {
+  display: none;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+}
+
+.imageHolderProjects {
+
 }
