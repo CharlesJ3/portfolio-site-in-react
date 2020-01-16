@@ -76,89 +76,93 @@ class App extends React.Component {
         updateColors: false,
         updatePos: 1,
         currentMenu: 0,
+        updateMenuSwitch: true,
       });
     }
 
     //We'll store all color updates in one function so we can share the colors across React and Three JS
     updateColors = (menu) => {
-
-      if(this.state.updatePos === 1){
-        this.setState({
-          updatePos: 2,
-        })
-      }
-
-        if (menu === 1) {
-
+        if(this.state.updatePos === 1){
           this.setState({
-            colors: {
-              currentColor1R: this.state.color3R,
-              currentColor1B: this.state.color3B,
-              currentColor1G: this.state.color3G,
-
-              currentColor2R: this.state.color4R,
-              currentColor2B: this.state.color4B,
-              currentColor2G: this.state.color4G,
-            },
-            updateColors: true,
-            currentMenu: 1,
-          })
-
-        } else if (menu === 2) {
-
-          this.setState({
-            colors: {
-              currentColor1R: this.state.color5R,
-              currentColor1B: this.state.color5B,
-              currentColor1G: this.state.color5G,
-
-              currentColor2R: this.state.color6R,
-              currentColor2B: this.state.color6B,
-              currentColor2G: this.state.color6G,
-            },
-            updateColors: true,
-            currentMenu: 2,
-          })
-        } else if (menu === 3) {
-
-          this.setState({
-            colors: {
-              currentColor1R: this.state.color7R,
-              currentColor1B: this.state.color7B,
-              currentColor1G: this.state.color7G,
-
-              currentColor2R: this.state.color8R,
-              currentColor2B: this.state.color8B,
-              currentColor2G: this.state.color8G,
-            },
-            updateColors: true,
-            currentMenu: 3,
-        })
-
-        } else if (menu === 4) {
-
-          this.setState({
-            colors: {
-              currentColor1R: this.state.color9R,
-              currentColor1B: this.state.color9B,
-              currentColor1G: this.state.color9G,
-
-              currentColor2R: this.state.color10R,
-              currentColor2B: this.state.color10B,
-              currentColor2G: this.state.color10G,
-            },
-            updateColors: true,
-            currentMenu: 4,
+            updatePos: 2,
           })
         }
 
-        setTimeout(() => {
-          this.setState({
-            updatePos: 3,
+          if (menu === 1) {
+
+            this.setState({
+              colors: {
+                currentColor1R: this.state.color3R,
+                currentColor1B: this.state.color3B,
+                currentColor1G: this.state.color3G,
+
+                currentColor2R: this.state.color4R,
+                currentColor2B: this.state.color4B,
+                currentColor2G: this.state.color4G,
+              },
+              updateColors: true,
+              currentMenu: 1,
+              updateMenuSwitch: false,
+            })
+
+          } else if (menu === 2) {
+
+            this.setState({
+              colors: {
+                currentColor1R: this.state.color5R,
+                currentColor1B: this.state.color5B,
+                currentColor1G: this.state.color5G,
+
+                currentColor2R: this.state.color6R,
+                currentColor2B: this.state.color6B,
+                currentColor2G: this.state.color6G,
+              },
+              updateColors: true,
+              currentMenu: 2,
+              updateMenuSwitch: false,
+            })
+          } else if (menu === 3) {
+
+            this.setState({
+              colors: {
+                currentColor1R: this.state.color7R,
+                currentColor1B: this.state.color7B,
+                currentColor1G: this.state.color7G,
+
+                currentColor2R: this.state.color8R,
+                currentColor2B: this.state.color8B,
+                currentColor2G: this.state.color8G,
+              },
+              updateColors: true,
+              currentMenu: 3,
+              updateMenuSwitch: false,
           })
-          // console.log('now!')
-        }, 2000);
-  }
+
+          } else if (menu === 4) {
+
+            this.setState({
+              colors: {
+                currentColor1R: this.state.color9R,
+                currentColor1B: this.state.color9B,
+                currentColor1G: this.state.color9G,
+
+                currentColor2R: this.state.color10R,
+                currentColor2B: this.state.color10B,
+                currentColor2G: this.state.color10G,
+              },
+              updateColors: true,
+              currentMenu: 4,
+              updateMenuSwitch: false,
+            })
+          }
+
+          setTimeout(() => {
+            this.setState({
+              updatePos: 3,
+            })
+            // console.log('now!')
+          }, this.state.updateMenuSwitch ? 2000 : 1);
+        }
 
     //This entire lifecycle will be used for our ThreeJS background. All initial ThreeJS must go inside componentDidMount
     componentDidMount() {

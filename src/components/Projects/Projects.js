@@ -32,8 +32,8 @@ const projects = [
     img: '../images/NSPF 1 About.PNG'
   },{
     type: 'site',
-    name: 'WAHC',
-    img: '',
+    name: 'WAHC 2014-2018',
+    img: '../images/NSPF 1 About.PNG',
   },{
     type: 'site',
     name: 'PHTA',
@@ -60,7 +60,7 @@ const projects = [
     img: '',
   },{
     type: 'site',
-    name: 'My Site',
+    name: 'National Swimming Pool Foundation',
     img: '',
   },{
     type: 'apps',
