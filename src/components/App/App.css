@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Gelasio');
+
 .app {
   background-color: rgba(0,0,0,.01);
   width: 100%;
@@ -19,4 +22,12 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+p, button {
+  font-family: 'Gelasio', sans-serif;
 }

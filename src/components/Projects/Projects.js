@@ -33,47 +33,47 @@ const projects = [
   },{
     type: 'site',
     name: 'WAHC 2014-2018',
-    img: '../images/NSPF 1 About.PNG',
+    img: '../images/WAHC 2014.PNG',
   },{
     type: 'site',
     name: 'PHTA',
-    img: '',
+    img: '../images/PHTA 1 Main.PNG',
   },{
     type: 'site',
     name: 'NSPF/WAHC Combo',
-    img: '',
+    img: '../images/WAHC 2019.PNG',
   },{
     type: 'site',
     name: 'WAHCity',
-    img: '',
+    img: '../images/WAHCity 1.png',
   },{
     type: 'site',
-    name: 'FIND ME',
-    img: '',
+    name: 'CharlesJones.me',
+    img: '../images/team.png',
   },{
     type: 'site',
     name: 'StepIntoSwim',
-    img: '',
+    img: '../images/SIS 1 Main.PNG',
   },{
     type: 'site',
     name: 'Instructor Portals',
-    img: '',
+    img: '../images/Portal Image 3.PNG',
   },{
     type: 'site',
     name: 'National Swimming Pool Foundation',
-    img: '',
+    img: '../images/NSPF 1 About.PNG',
   },{
     type: 'apps',
-    name: 'NSPF',
-    img: '../images/NSPF 1 About.PNG'
+    name: 'This "site"!',
+    img: '../images/App 3.PNG',
   },{
     type: 'apps',
-    name: 'NSPF',
-    img: '../images/NSPF 1 About.PNG'
+    name: 'Always Funny',
+    img: '../images/App 2.PNG'
   },{
     type: 'apps',
-    name: 'WAHC',
-    img: '',
+    name: 'Movie Selector - Drop the Ball!',
+    img: '../images/App 1.PNG'
   },{
     type: 'pens',
     name: 'PHTA',
@@ -146,8 +146,8 @@ const Projects = (props) => {
                 {e.name} <br /><br />
                 <img
                   className="imageHolderProjects"
-                  src={e.img}
-                  width={'70%'}
+                  src={e.img }
+                  width={'80%'}
                   alt={e.name}
                 >
                 </img>
@@ -162,7 +162,7 @@ const Projects = (props) => {
               <img
                 className="imageHolderProjects"
                 src={e.img}
-                width={'70%'}
+                width={'40%'}
                 alt={e.name}
               >
               </img>
@@ -177,7 +177,7 @@ const Projects = (props) => {
             <img
               className="imageHolderProjects"
               src={e.img}
-              width={'70%'}
+              width={'80%'}
               alt={e.name}
             >
             </img>
