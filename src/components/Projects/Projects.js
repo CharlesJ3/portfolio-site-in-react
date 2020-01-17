@@ -76,32 +76,69 @@ const projects = [
     img: '../images/App 1.PNG'
   },{
     type: 'pens',
-    name: 'PHTA',
+    name: 'Infinite Snek (for my son)',
     img: '',
+    iFrameData: 'https://codepen.io/CharlesJ3/embed/VOMBQP?height=265&theme-id=dark&default-tab=result',
   },{
     type: 'pens',
-    name: 'NSPF/WAHC Combo',
+    name: 'Flippy Fish (for my daughter)',
     img: '',
+    iFrameData: 'https://codepen.io/CharlesJ3/embed/OYLRqw?height=265&theme-id=dark&default-tab=result',
   },{
     type: 'pens',
-    name: 'WAHCity',
+    name: 'Fun with Rainbow Text',
     img: '',
+    iFrameData: 'https://codepen.io/CharlesJ3/embed/EpVRMj?height=265&theme-id=dark&default-tab=result',
   },{
     type: 'pens',
-    name: 'FIND ME',
+    name: 'Spin 2 : Electric Spinaloo',
     img: '',
+    iFrameData: 'https://codepen.io/CharlesJ3/embed/qXLOYO?height=265&theme-id=dark&default-tab=result',
   },{
     type: 'pens',
-    name: 'StepIntoSwim',
+    name: 'Rotating Pipes (Loading Screen)',
     img: '',
+    iFrameData: 'https://codepen.io/CharlesJ3/embed/PKBRPd?height=265&theme-id=dark&default-tab=result',
   },{
     type: 'pens',
-    name: 'Instructor Portals',
+    name: 'Pure CSS Progress (Loading Screen)',
     img: '',
+    iFrameData: 'https://codepen.io/CharlesJ3/embed/Lxegdb?height=265&theme-id=dark&default-tab=result',
   },{
     type: 'pens',
-    name: 'My Site',
+    name: 'Animations Using GSAP',
     img: '',
+    iFrameData: 'https://codepen.io/CharlesJ3/embed/yLBwyKd?height=265&theme-id=dark&default-tab=result',
+  },{
+    type: 'pens',
+    name: 'NASA Astronomy Picture of the Day',
+    img: '',
+    iFrameData: 'https://codepen.io/CharlesJ3/embed/gxebMx?height=265&theme-id=dark&default-tab=result',
+  },{
+    type: 'pens',
+    name: 'Choose Your Theme!',
+    img: '',
+    iFrameData: 'https://codepen.io/CharlesJ3/embed/ZEzVVbz?height=265&theme-id=dark&default-tab=result',
+  },{
+    type: 'pens',
+    name: 'Staring',
+    img: '',
+    iFrameData: 'https://codepen.io/CharlesJ3/embed/aboQNee?height=265&theme-id=dark&default-tab=result',
+  },{
+    type: 'pens',
+    name: 'Rain Drops',
+    img: '',
+    iFrameData: 'https://codepen.io/CharlesJ3/embed/xxKQOKK?height=265&theme-id=dark&default-tab=result',
+  },{
+    type: 'pens',
+    name: 'Rotating Triangles',
+    img: '',
+    iFrameData: 'https://codepen.io/CharlesJ3/embed/RwbvpoL?height=265&theme-id=dark&default-tab=result',
+  },{
+    type: 'pens',
+    name: 'Bubble Up!',
+    img: '',
+    iFrameData: 'https://codepen.io/CharlesJ3/embed/zgKvVm?height=265&theme-id=dark&default-tab=result',
   },
 ];
 
@@ -112,9 +149,8 @@ const changeMenus = (currentMenu) => {
     document.getElementById('projectSection3').style.display = 'none';
   } else if(currentMenu === 2){
     document.getElementById('projectSection1').style.display = 'none';
-    document.getElementById('projectSection2').style.display = 'flex';
+    document.getElementById('projectSection2').style.display = 'inline-block';
     document.getElementById('projectSection3').style.display = 'none';
-    console.log('test');
   } else if(currentMenu === 3){
     document.getElementById('projectSection1').style.display = 'none';
     document.getElementById('projectSection2').style.display = 'none';
@@ -172,15 +208,14 @@ const Projects = (props) => {
         <div id="projectSection3">
         {projects.map((e,index) => {
           return e.type === 'pens' ?
-          <p className="projectsItem" key={e.name + index}>
+          <p className="projectsPen" key={e.name + index}>
             {e.name} <br /><br />
-            <img
-              className="imageHolderProjects"
-              src={e.img}
-              width={'80%'}
-              alt={e.name}
-            >
-            </img>
+          <iframe
+            width={'100%'}
+            height={'100%'}
+            src={e.iFrameData}
+          >
+          </iframe>
           </p> : false;
         })}
         </div>

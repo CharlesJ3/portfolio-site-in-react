@@ -60,13 +60,25 @@
 
 .projectsItem {
   color: white;
-  flex: 1 1 40%;
+  flex: 1 2 48%;
   text-align: center;
   font-size: 1.5rem;
+  height: 15em;
   text-decoration: underline;
   text-shadow: 4px 4px 12px pink;
+  margin-top: 4%;
 }
 
+.projectsPen {
+  color: white;
+  flex: 1 1 52%;
+  text-align: center;
+  font-size: 1.5rem;
+  height: 15em;
+  text-decoration: underline;
+  text-shadow: 4px 4px 12px pink;
+  margin-top: 4%;
+}
 
 #projectSection1 {
   display: flex;
