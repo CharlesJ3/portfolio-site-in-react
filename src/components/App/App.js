@@ -10,7 +10,7 @@ class App extends React.Component {
 
       this.state = ({
         colors: {
-
+          
           //The Current First color for Styled Divs
           currentColor1R: 225,
           currentColor1B: 21,
@@ -383,11 +383,11 @@ class App extends React.Component {
         ring17.position.y = 83 * Math.cos(Date.now() / 5000);
         ring18.position.y = 83 * Math.cos(Date.now() / 5000);
 
-      // camera.position.z = 100 * Math.cos(Date.now() / 5000);
-      // camera.position.y = 100 * Math.cos(Date.now() / 5000);
+      camera.position.z = 100 * Math.cos(Date.now() / 5000);
+      camera.position.y = 100 * Math.cos(Date.now() / 5000);
 
-      // camera.position.z = 300 * Math.cos(Date.now() / 5000);
-      // camera.position.y = 20 * Math.tan(Date.now() / 5000);
+      camera.position.z = 300 * Math.cos(Date.now() / 5000);
+      camera.position.y = 20 * Math.tan(Date.now() / 5000);
       renderer.render(scene, camera);
       requestAnimationFrame(render);
     }

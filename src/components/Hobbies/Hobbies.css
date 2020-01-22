@@ -13,6 +13,155 @@
   }
 }
 
+@keyframes rain1 {
+
+  0% {
+    top: -150%;
+    transform: rotate(50deg);
+  }
+
+  25% {
+    top: -5%;
+    transform: rotate(550deg);
+  }
+
+  100% {
+    top: 230%;
+    transform: rotate(1450deg);
+  }
+}
+
+@keyframes rain2 {
+
+  0% {
+    top: -150%;
+    transform: rotate(50deg);
+  }
+
+  25% {
+    top: -5%;
+    transform: rotate(250deg);
+  }
+
+  100% {
+    top: 230%;
+    transform: rotate(450deg);
+  }
+}
+
+@keyframes rain3 {
+
+  0% {
+    top: -150%;
+    transform: rotate(50deg);
+  }
+
+  25% {
+    top: -5%;
+    transform: rotate(250deg);
+  }
+
+  100% {
+    top: 230%;
+    transform: rotate(450deg);
+  }
+}
+
+@keyframes rain4 {
+
+  0% {
+    top: -150%;
+    transform: rotate(50deg);
+  }
+
+  25% {
+    top: -5%;
+    transform: rotate(250deg);
+  }
+
+  100% {
+    top: 230%;
+    transform: rotate(450deg);
+  }
+}
+
+@keyframes rain5 {
+
+  0% {
+    top: -150%;
+    transform: rotate(50deg);
+  }
+
+  25% {
+    top: -5%;
+    transform: rotate(250deg);
+  }
+
+  100% {
+    top: 230%;
+    transform: rotate(450deg);
+  }
+}
+
+@keyframes rain6 {
+
+  0% {
+    bottom: -150%;
+    transform: rotate(50deg);
+  }
+
+  25% {
+    bottom: -5%;
+    transform: rotate(250deg);
+  }
+
+  100% {
+    bottom: 230%;
+    transform: rotate(450deg);
+  }
+}
+
 .transitionMe {
 
+}
+
+.hobbyCubey {
+  width: 8%;
+  position: absolute;
+}
+
+#hobbyCubey1{
+  animation: rain1 3.5s ease-in infinite;
+  left: 10%;
+  top: -20%;
+}
+
+#hobbyCubey2{
+  animation: rain2 12s ease-in infinite;
+  left: 20%;
+  top: -20%;
+}
+
+#hobbyCubey3{
+  animation: rain3 9s ease-in infinite;
+  left: 30%;
+  top: -20%;
+}
+
+#hobbyCubey4{
+  animation: rain4 4s ease-in infinite;
+  left: 40%;
+  top: -20%;
+}
+
+#hobbyCubey5{
+  animation: rain5 7s ease-in infinite;
+  left: 50%;
+  top: -20%;
+}
+
+#hobbyCubeyUp{
+  animation: rain6 15s ease-in infinite;
+  left: 80%;
+  bottom: -20%;
 }

@@ -26,7 +26,26 @@ const Hobbies = (props) => {
     colors={props.colors}
     updatePos={props.updatePos}
     currentMenu={props.currentMenu}
-  />
+  >
+    <div id="hobbyContainer">
+      <div id="rain">
+        <img className="hobbyCubey" id="hobbyCubey1" src="../images/UI/hobbyCubey1.png"></img>
+        <img className="hobbyCubey" id="hobbyCubey2" src="../images/UI/hobbyCubey1.png"></img>
+        <img className="hobbyCubey" id="hobbyCubey3" src="../images/UI/hobbyCubey1.png"></img>
+        <img className="hobbyCubey" id="hobbyCubey4" src="../images/UI/hobbyCubey1.png"></img>
+        <img className="hobbyCubey" id="hobbyCubey5" src="../images/UI/hobbyCubey1.png"></img>
+        <img className="hobbyCubey" id="hobbyCubeyUp" src="../images/UI/hobbyCubey2.png"></img>
+
+      </div>
+
+      <div>
+      {/* PUT HOBBY STUFF HERE */}
+
+      </div>
+
+
+    </div>
+  </HobbiesDetails>
  )
 }
 

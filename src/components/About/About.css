@@ -84,37 +84,37 @@
 
 @keyframes up1 {
   0% {
-    top: -45%;
+    bottom: -45%;
     right: 11%;
   }
 
   100% {
-    top: 27%;
+    bottom: 18%;
     right: 11%;
   }
 }
 
 @keyframes up2 {
   0% {
-    top: -45%;
+    bottom: -45%;
     right: 24%;
   }
 
   100% {
-    top: 9%;
-    right: 24%;
+    bottom: 30%;
+    right: 1%;
   }
 }
 
 @keyframes up3 {
   0% {
-    top: -45%;
-    right: 5%;
+    bottom: -45%;
+    right: 41%;
   }
 
   100% {
-    top: 5%;
-    right: 5%;
+    bottom: 6%;
+    right: 1%;
   }
 }
 
@@ -154,20 +154,66 @@
   }
 }
 
+@keyframes aboutCubey1 {
+  0% {
+    top: -39%;
+    left: 23%;
+    opacity: 0.25;
+    transform: rotate(50deg);
+  }
+
+  100% {
+    top: 38%;
+    left: -42%;
+    opacity: .85;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes aboutCubey2 {
+  0% {
+    top: -39%;
+    right: 23%;
+    opacity: 0.55;
+    transform: rotate(-50deg);
+  }
+
+  100% {
+    top: 38%;
+    right: -42%;
+    opacity: .85;
+    transform: rotate(-360deg);
+  }
+}
+
 #about1, #about2, #about3 {
-  border: 3px solid red;
-  position: relative;
-  width: 41%;
+  border: 3px solid rgb(15,12,226);
+  width: 40%;
+  margin: 3%;
+  border-radius: 25%;
   height: 40%;
+  box-shadow: 1px 1px 10px rgb(22,132,124);
 }
 
 #aboutMain p {
   color: white;
-  width: 90%;
-  padding-top: 10%;
+  width: 100%;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  padding: 1% 30% 4% 30%;
+  border-radius: 5%;
+  border: 3px solid deepskyblue;
+  margin: -5% -30% -2% -30%;
+  background-color: rgba(0,0,0,.5);
   text-align: center;
-  font-size: 1.2rem;
-  margin: 0 auto;
+  font-size: 1.45rem;
+  box-shadow: inset 0px 0px 11px deepskyblue, 0px 7px 16px rgb(0, 255, 255);
+}
+
+#aboutMain h2 {
+  font-family: 'Sigmar One', sans-serif;
+  text-decoration: underline;
+  text-decoration-color: deepskyblue;
+  text-decoration-style: double;
 }
 
 #about1 {
@@ -186,24 +232,40 @@
 }
 
 #aboutMain {
-  border: 3px solid red;
-  position: absolute;
-  top: 3%;
-  left: 3%;
-  width: 45%;
+  position: relative;
+  padding-top: 1%;
+  text-align: center;
+  width: 42%;
   height: 50%;
+  margin: 0 auto;
 }
 
-#aboutPic1, #aboutPic2, #aboutPic3,
+#aboutPic1, #aboutPic2, #aboutPic3 {
+  width: 42%;
+  height: 10%;
+  position: absolute;
+  border: 3px solid rgb(22,132,124);
+  box-shadow: 0px 5px 1px rgb(15,12,226);
+  transition: all 2s;
+}
+
 #aboutPic4, #aboutPic5, #aboutPic6 {
   width: 20%;
   height: 20%;
   position: absolute;
-  border: 3px solid red;
+  border: 3px solid rgb(22,132,124);
+  box-shadow: 0px 5px 1px rgb(15,12,226);
+  transition: all 2s;
+}
+
+#aboutPic1:hover, #aboutPic2:hover, #aboutPic3:hover, #aboutPic4:hover, #aboutPic5:hover, #aboutPic6:hover {
+  border: 3px solid rgb(15,12,226);
+  box-shadow: 15px 15px 15px rgb(22,132,124);
+  z-index: 2;
 }
 
 #aboutPic1 {
-  top: -27%;
+  bottom: -37%;
   right: 11%;
   animation: up1 2s linear 1;
   animation-delay: .2s;
@@ -211,7 +273,7 @@
 }
 
 #aboutPic2 {
-  top: -29%;
+  bottom: -29%;
   right: 24%;
   animation: up2 2s linear 1;
   animation-delay: .4s;
@@ -219,7 +281,7 @@
 }
 
 #aboutPic3 {
-  top: -45%;
+  bottom: -45%;
   right: 5%;
   animation: up3 2s linear 1;
   animation-delay: .6s;
@@ -257,5 +319,24 @@
 
 .aboutContainer p {
   animation: showMe 10s linear 1;
+  animation-fill-mode: forwards;
+}
+
+.aboutCubey {
+  width: 45%;
+  position: absolute;
+}
+
+#aboutCubey1 {
+  top: -38%;
+  left: -42%;
+  animation: aboutCubey1 2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+#aboutCubey2 {
+  top: -38%;
+  right: -42%;
+  animation: aboutCubey2 2.25s ease-in;
   animation-fill-mode: forwards;
 }

@@ -31,27 +31,38 @@ const About = (props) => {
 
       {/* Upper Left Section */}
       <div className="aboutContainer" id="aboutMain">
-        <div className="aboutContainer" id="about1">
+        <div className="aboutImageContainer">
+          <img
+            className="aboutContainer"
+            id="about1"
+            src="../images/aboutImage1.jpg">
+          </img>
+          <img
+            className="aboutContainer"
+            id="about2"
+            src="../images/aboutImage2.jpg">
+          </img>
+          <br></br>
+          <br></br>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum vestibulum sapien eget sollicitudin.
-          Nam viverra, sapien sed volutpat imperdiet, dui justo sagittis ante, non tincidunt velit ligula nec massa.
-          Integer dapibus pharetra nisl vitae tristique. Fusce tristique eros ut iaculis mollis.
-          Vivamus elementum lacus venenatis diam ultrices varius.
-          Proin maximus fermentum faucibus. Vivamus lobortis eu lacus eget feugiat.
-          Maecenas tincidunt nisl lorem, at rhoncus metus finibus vel. Sed ex quam, pretium eu finibus eget, sollicitudin vel est.
+        <p><h2>Hello World!</h2>
+          <img className="aboutCubey" id="aboutCubey1" src="../images/UI/aboutCubey1.png"></img>
+          I'm Charles. I do full-stack development, along with some random design when needed. I'm a developer, a veteran,
+          a father, and a constant learner. Report a bug or contact
+          me <a href="mailto:c.jones.3.zero@gmail.com">here!</a>
+          <img className="aboutCubey" id="aboutCubey2" src="../images/UI/aboutCubey2.png"></img>
         </p>
       </div>
 
       {/* Upper Right Section */}
-      <div className="aboutContainer" id="aboutPic1"></div>
-      <div className="aboutContainer" id="aboutPic2"></div>
-      <div className="aboutContainer" id="aboutPic3"></div>
+        <video className="aboutContainer" id="aboutPic1" width="100%" height="100%" autoPlay loop src="../images/Spells/Videos/Earth0.mp4" />
+        <video className="aboutContainer" id="aboutPic2" width="100%" height="100%" autoPlay loop src="../images/Spells/Videos/Rain1.mp4" />
+        <video className="aboutContainer" id="aboutPic3" width="100%" height="100%" autoPlay loop src="../images/Spells/Videos/Lightning0.mp4" />
 
       {/* Bottom Left Section */}
-      <div className="aboutContainer" id="aboutPic4"></div>
-      <div className="aboutContainer" id="aboutPic5"></div>
-      <div className="aboutContainer" id="aboutPic6"></div>
+        <img className="aboutContainer" id="aboutPic4" src="../images/Art Weather Boss 2.gif"></img>
+        <img className="aboutContainer" id="aboutPic5" src="../images/Art Group 1.gif"></img>
+        <img className="aboutContainer" id="aboutPic6" src="../images/Art Weather Boss 3.gif"></img>
     </div>
   </AboutDetails>
  )

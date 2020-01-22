@@ -22,14 +22,25 @@ const ProjectsDetails = styled.div`
 
 const projects = [
   {
-    type: 'admin',
-    currentProject: 0,
-    lastProject: 0,
-    nextProject: 1,
+    type: 'site',
+    name: 'StepIntoSwim',
+    img: '../images/SIS 1 Main.PNG',
   },{
     type: 'site',
-    name: 'NSPF',
-    img: '../images/NSPF 1 About.PNG'
+    name: 'Instructor Portals',
+    img: '../images/Portal Image 3.PNG',
+  },{
+    type: 'site',
+    name: 'NSPF/WAHC Combo',
+    img: '../images/WAHC 2019.PNG',
+  },{
+    type: 'site',
+    name: 'National Swimming Pool Foundation',
+    img: '../images/NSPF 1 About.PNG',
+  },{
+    type: 'site',
+    name: 'CharlesJones.me',
+    img: '../images/team.png',
   },{
     type: 'site',
     name: 'WAHC 2014-2018',
@@ -40,40 +51,20 @@ const projects = [
     img: '../images/PHTA 1 Main.PNG',
   },{
     type: 'site',
-    name: 'NSPF/WAHC Combo',
-    img: '../images/WAHC 2019.PNG',
-  },{
-    type: 'site',
     name: 'WAHCity',
     img: '../images/WAHCity 1.png',
   },{
-    type: 'site',
-    name: 'CharlesJones.me',
-    img: '../images/team.png',
-  },{
-    type: 'site',
-    name: 'StepIntoSwim',
-    img: '../images/SIS 1 Main.PNG',
-  },{
-    type: 'site',
-    name: 'Instructor Portals',
-    img: '../images/Portal Image 3.PNG',
-  },{
-    type: 'site',
-    name: 'National Swimming Pool Foundation',
-    img: '../images/NSPF 1 About.PNG',
-  },{
     type: 'apps',
-    name: 'This "site"!',
-    img: '../images/App 3.PNG',
+    name: 'Movie Selector - Drop the Ball!',
+    img: '../images/App 1.PNG'
   },{
     type: 'apps',
     name: 'Always Funny',
     img: '../images/App 2.PNG'
   },{
     type: 'apps',
-    name: 'Movie Selector - Drop the Ball!',
-    img: '../images/App 1.PNG'
+    name: 'This "site"!',
+    img: '../images/App 3.PNG',
   },{
     type: 'pens',
     name: 'Infinite Snek (for my son)',
@@ -138,7 +129,7 @@ const projects = [
     type: 'pens',
     name: 'Bubble Up!',
     img: '',
-    iFrameData: 'https://codepen.io/CharlesJ3/embed/zgKvVm?height=265&theme-id=dark&default-tab=result',
+    iFrameData: 'https://codepen.io/CharlesJ3/embed/zgKvVm?height=765&theme-id=dark&default-tab=result',
   },
 ];
 
@@ -177,7 +168,15 @@ const Projects = (props) => {
       <div id="projectsSection">
         <div id="projectSection1">
           {projects.map((e,index) => {
-            return e.type === 'site' ?
+            /*
+            *  Here we will use map to generate our array of objects
+            *  which contains all my sites, apps, and pens
+            *
+            *  Please note: && props.currentMenu is important so we do not
+            *  constantly load external resources when choosing new menu due
+            *  to styled components rendering dynamically
+            */
+            return e.type === 'site' && props.currentMenu === 3 ?
               <p className="projectsItem" key={e.name + index}>
                 {e.name} <br /><br />
                 <img
@@ -192,13 +191,13 @@ const Projects = (props) => {
         </div>
         <div id="projectSection2">
           {projects.map((e,index) => {
-            return e.type === 'apps' ?
+            return e.type === 'apps' && props.currentMenu === 3 ?
             <p className="projectsItem" key={e.name + index}>
               {e.name} <br /><br />
               <img
                 className="imageHolderProjects"
                 src={e.img}
-                width={'40%'}
+                width={'75%'}
                 alt={e.name}
               >
               </img>
@@ -207,16 +206,16 @@ const Projects = (props) => {
         </div>
         <div id="projectSection3">
         {projects.map((e,index) => {
-          return e.type === 'pens' ?
-          <p className="projectsPen" key={e.name + index}>
-            {e.name} <br /><br />
+          return e.type === 'pens' && props.currentMenu === 3 ?
+          <div className="projectsPen" key={e.name + index}>
+
           <iframe
             width={'100%'}
             height={'100%'}
             src={e.iFrameData}
           >
           </iframe>
-          </p> : false;
+          </div> : false;
         })}
         </div>
       </div>
