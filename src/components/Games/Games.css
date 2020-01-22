@@ -36,29 +36,38 @@
   display: inherit;
 }
 
-#gamesBottom {
-  border: 2px solid purple;
-  z-index: -1;
-}
-
 .gameSectionGames, .gameSectionArt {
   width: 50%;
   overflow: scroll;
-  scrollbar-color: red red;
-  -webkit-scrollbar-color: red red;
   overflow-x: hidden;
+}
+
+.gameSectionGames a, .gameSectionArt a {
+  text-decoration-style: double;
 }
 
 #gamesTop h2 {
   text-align: center;
   position: fixed;
-  bottom: 94%;
-  border: 5px solid red;
+  bottom: 95%;
+  border: 5px solid rgb(113, 255, 131);
   width: 36%;
   z-index: -1;
   color: white;
   background-color: black;
   margin: 0 auto;
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+  color: white;
+  flex: 1 1 50%;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-shadow:
+    #FFC 0px 0px 1px,
+       rgb(0, 0, 0) 1px 1px 2px,
+         rgb(38, 255, 0) 0px 0px 5px;
+  margin-top: 4%;
 }
 
 .gameSectionName h2 {
@@ -66,7 +75,7 @@
   position: relative;
   top: -7%;
   z-index: 1;
-  border: 5px solid red;
+  border: 5px solid rgb(113, 255, 131);
   width: 50%;
   color: white;
   background-color: black;
@@ -95,7 +104,7 @@
 
 .gameImageMain {
   width: 48%;
-  border: 1px solid red;
+  border: 5px solid rgb(113, 255, 131);
   height: 99%;
   position: absolute;
   top: 1%;
@@ -105,7 +114,7 @@
 
 .gameImageDescription {
   width: 48%;
-  border: 1px solid red;
+  border: 5px solid rgb(113, 255, 131);
   height: 99%;
   position: absolute;
   top: 1%;
@@ -155,7 +164,10 @@
   text-align: center;
   font-size: 1.5rem;
   text-decoration: underline;
-  text-shadow: 4px 4px 12px pink;
+  text-shadow:
+  rgb(0, 0, 0) 1px 1px 2px,
+      rgb(0, 0, 0) 0px 0px 2px,
+        rgb(38, 255, 0) 0px 0px 5px;
   margin-top: 4%;
 }
 

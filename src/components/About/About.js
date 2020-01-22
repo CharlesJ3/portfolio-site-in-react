@@ -43,15 +43,18 @@ const About = (props) => {
             src="../images/aboutImage2.jpg">
           </img>
           <br></br>
-          <br></br>
         </div>
-        <p><h2>Hello World!</h2>
-          <img className="aboutCubey" id="aboutCubey1" src="../images/UI/aboutCubey1.png"></img>
+        <div><h2>HELLO WORLD!</h2>
+        <br></br>
+          <img alt="about cubey left" className="aboutCubey" id="aboutCubey1" src="../images/UI/aboutCubey1.png"></img>
+          <p>
           I'm Charles. I do full-stack development, along with some random design when needed. I'm a developer, a veteran,
           a father, and a constant learner. Report a bug or contact
           me <a href="mailto:c.jones.3.zero@gmail.com">here!</a>
-          <img className="aboutCubey" id="aboutCubey2" src="../images/UI/aboutCubey2.png"></img>
-        </p>
+          </p>
+          <img alt="about cubey right" className="aboutCubey" id="aboutCubey2" src="../images/UI/aboutCubey2.png"></img>
+        </div>
+                  <br></br>
       </div>
 
       {/* Upper Right Section */}

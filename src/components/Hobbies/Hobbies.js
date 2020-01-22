@@ -29,12 +29,12 @@ const Hobbies = (props) => {
   >
     <div id="hobbyContainer">
       <div id="rain">
-        <img className="hobbyCubey" id="hobbyCubey1" src="../images/UI/hobbyCubey1.png"></img>
-        <img className="hobbyCubey" id="hobbyCubey2" src="../images/UI/hobbyCubey1.png"></img>
-        <img className="hobbyCubey" id="hobbyCubey3" src="../images/UI/hobbyCubey1.png"></img>
-        <img className="hobbyCubey" id="hobbyCubey4" src="../images/UI/hobbyCubey1.png"></img>
-        <img className="hobbyCubey" id="hobbyCubey5" src="../images/UI/hobbyCubey1.png"></img>
-        <img className="hobbyCubey" id="hobbyCubeyUp" src="../images/UI/hobbyCubey2.png"></img>
+        <img alt="falling cubey 1" className="hobbyCubey" id="hobbyCubey1" src="../images/UI/hobbyCubey1.png"></img>
+        <img alt="falling cubey 2" className="hobbyCubey" id="hobbyCubey2" src="../images/UI/hobbyCubey1.png"></img>
+        <img alt="falling cubey 3" className="hobbyCubey" id="hobbyCubey3" src="../images/UI/hobbyCubey1.png"></img>
+        <img alt="falling cubey 4" className="hobbyCubey" id="hobbyCubey4" src="../images/UI/hobbyCubey1.png"></img>
+        <img alt="falling cubey 5" className="hobbyCubey" id="hobbyCubey5" src="../images/UI/hobbyCubey1.png"></img>
+        <img alt="falling cubey 6" className="hobbyCubey" id="hobbyCubeyUp" src="../images/UI/hobbyCubey2.png"></img>
 
       </div>
 

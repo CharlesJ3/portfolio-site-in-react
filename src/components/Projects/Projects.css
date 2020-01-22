@@ -13,6 +13,39 @@
   }
 }
 
+@keyframes codepenNotice {
+  0% {
+
+  }
+
+  25% {
+
+  }
+
+  50% {
+
+  }
+
+  75% {
+
+  }
+
+  100% {
+
+  }
+}
+
+@keyframes movingBG {
+	0% {
+		background-color: rgba(237,55,117, .84);
+	}
+	50% {
+		background-color: rgba(27,55,117, .4);
+	}
+	100% {
+		background-color: rgba(237,55,117, .84);
+	}
+}
 
 .transitionMe {
 
@@ -28,7 +61,6 @@
   left: 2%;
   top: 4%;
   margin: 0 auto;
-  border: 1px solid purple;
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -43,7 +75,7 @@
   height: 75%;
   left: 2%;
   top: 23%;
-  border: 1px solid purple;
+
   position: absolute;
   overflow: scroll;
   overflow-x: hidden;
@@ -57,6 +89,84 @@
   color: white;
   font-size: 2.5rem;
 }
+
+#projectSites {
+
+}
+
+#projectSites:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0Sites I've Built or Helped Build";
+  position: absolute;
+  z-index: -1;
+  top: -15%;
+  text-align: left;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1%;
+	animation: movingBG 5s ease infinite;
+  transform: scaleX(0);
+  transform-origin: 0%;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  animation: movingBG 10s linear infinite;
+  border-radius: 10%;
+  height: 65%;
+  border: 1px solid deepskyblue;
+}
+
+#projectApps:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0Sites I've Built or Helped Build";
+  position: absolute;
+  z-index: -1;
+  top: -15%;
+  text-align: left;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1%;
+	animation: movingBG 5s ease infinite;
+  transform: scaleX(0);
+  transform-origin: 0%;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  animation: movingBG 10s linear infinite;
+  border-radius: 10%;
+  height: 65%;
+  border: 1px solid deepskyblue;
+}
+
+#projectPens:before {
+  content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0Sites I've Built or Helped Build";
+  position: absolute;
+  z-index: -1;
+  top: -15%;
+  text-align: left;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1%;
+	animation: movingBG 5s ease infinite;
+  transform: scaleX(0);
+  transform-origin: 0%;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  animation: movingBG 10s linear infinite;
+  border-radius: 10%;
+  height: 65%;
+  border: 1px solid deepskyblue;
+}
+
+#projectSites:hover:before, #projectSites:focus:before, #projectSites:active:before,
+#projectApps:hover:before, #projectApps:focus:before, #projectApps:active:before,
+#projectPens:hover:before, #projectPens:focus:before, #projectPens:active:before {
+  -webkit-transform: scaleX(.5);
+  transform: scaleX(.5);
+}
+
 
 .projectsItem {
   color: white;
@@ -76,7 +186,7 @@
   font-size: 1.5rem;
   text-decoration: underline;
   text-shadow: 4px 4px 12px pink;
-  margin-top: 6%;
+  margin-top: 1%;
 }
 
 #projectSection1 {
@@ -85,6 +195,7 @@
   justify-content: space-between;
   align-content: space-between;
   align-items: center;
+  width: 99%;
 }
 
 #projectSection2 {
@@ -93,6 +204,7 @@
   justify-content: space-between;
   align-content: space-between;
   align-items: center;
+  width: 99%;
 }
 
 #projectSection3 {
@@ -101,6 +213,7 @@
   justify-content: space-between;
   align-content: space-between;
   align-items: center;
+  width: 99%;
 }
 
 .imageHolderProjects {
@@ -115,4 +228,37 @@
   box-shadow: 15px 15px 15px rebeccapurple;
   transition: all 2s;
   border-radius: 0%;
+}
+
+.projectsItem a {
+  text-decoration-style: double;
+}
+
+#codepenInfo {
+  text-shadow: 4px 4px 12px pink;
+  text-align: center;
+  font-size: 1.4rem;
+  top: 20%;
+  position: fixed;
+  color: white;
+  margin: 0 auto;
+  width: 71%;
+  padding: .5%;
+  border-radius: 5%;
+  background: linear-gradient(to right, rgba(237,55,117, .4) 41%,rgba(25,22,221,.4) 100%,rgba(25,22,221, 0.4) 100%);
+  border: 1px solid purple;
+  animation: codepenNotice 3s linear infinite;
+}
+
+.rerun {
+  font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+  -webkit-transition: color 300ms ease, background-color 300ms ease, opacity 300ms ease;
+  transition: color 300ms ease, background-color 300ms ease, opacity 300ms ease;
+  font-size: 1.2rem;
+  padding: 5px 7px;
+  margin: 4px 2px;
+  border-radius: 3px;
+  border: 0;
+  color: #eeeeee;
+  background-color: #333333;
 }

@@ -25,111 +25,135 @@ const projects = [
     type: 'site',
     name: 'StepIntoSwim',
     img: '../images/SIS 1 Main.PNG',
+    link: 'https://stepintoswim.org',
   },{
     type: 'site',
     name: 'Instructor Portals',
     img: '../images/Portal Image 3.PNG',
+    link: 'http://portofino.vls01.com',
   },{
     type: 'site',
     name: 'NSPF/WAHC Combo',
     img: '../images/WAHC 2019.PNG',
+    link: 'https://nspf.org/wahc',
   },{
     type: 'site',
     name: 'National Swimming Pool Foundation',
     img: '../images/NSPF 1 About.PNG',
+    link: 'https://nspf.org/',
   },{
     type: 'site',
     name: 'CharlesJones.me',
     img: '../images/team.png',
+    link: 'http://charlesjones.me',
   },{
     type: 'site',
     name: 'WAHC 2014-2018',
     img: '../images/WAHC 2014.PNG',
+    link: 'https://thewahc.org',
   },{
     type: 'site',
     name: 'PHTA',
     img: '../images/PHTA 1 Main.PNG',
+    link: 'https://phta.org',
   },{
     type: 'site',
     name: 'WAHCity',
     img: '../images/WAHCity 1.png',
+    link: 'https://thewahc.org',
   },{
     type: 'apps',
     name: 'Movie Selector - Drop the Ball!',
-    img: '../images/App 1.PNG'
+    img: '../images/App 1.PNG',
+    link: 'http://movie-selector.herokuapp.com/',
   },{
     type: 'apps',
     name: 'Always Funny',
-    img: '../images/App 2.PNG'
+    img: '../images/App 2.PNG',
+    link: 'http://sunnyquote.herokuapp.com/',
   },{
     type: 'apps',
     name: 'This "site"!',
     img: '../images/App 3.PNG',
+    link: '#',
   },{
     type: 'pens',
     name: 'Infinite Snek (for my son)',
     img: '',
     iFrameData: 'https://codepen.io/CharlesJ3/embed/VOMBQP?height=265&theme-id=dark&default-tab=result',
+    link: '',
   },{
     type: 'pens',
     name: 'Flippy Fish (for my daughter)',
     img: '',
     iFrameData: 'https://codepen.io/CharlesJ3/embed/OYLRqw?height=265&theme-id=dark&default-tab=result',
+    link: '',
   },{
     type: 'pens',
     name: 'Fun with Rainbow Text',
     img: '',
     iFrameData: 'https://codepen.io/CharlesJ3/embed/EpVRMj?height=265&theme-id=dark&default-tab=result',
+    link: '',
   },{
     type: 'pens',
     name: 'Spin 2 : Electric Spinaloo',
     img: '',
     iFrameData: 'https://codepen.io/CharlesJ3/embed/qXLOYO?height=265&theme-id=dark&default-tab=result',
+    link: '',
   },{
     type: 'pens',
     name: 'Rotating Pipes (Loading Screen)',
     img: '',
     iFrameData: 'https://codepen.io/CharlesJ3/embed/PKBRPd?height=265&theme-id=dark&default-tab=result',
+    link: '',
   },{
     type: 'pens',
     name: 'Pure CSS Progress (Loading Screen)',
     img: '',
     iFrameData: 'https://codepen.io/CharlesJ3/embed/Lxegdb?height=265&theme-id=dark&default-tab=result',
+    link: '',
   },{
     type: 'pens',
     name: 'Animations Using GSAP',
     img: '',
     iFrameData: 'https://codepen.io/CharlesJ3/embed/yLBwyKd?height=265&theme-id=dark&default-tab=result',
+    link: '',
   },{
     type: 'pens',
     name: 'NASA Astronomy Picture of the Day',
     img: '',
     iFrameData: 'https://codepen.io/CharlesJ3/embed/gxebMx?height=265&theme-id=dark&default-tab=result',
+    link: '',
   },{
     type: 'pens',
     name: 'Choose Your Theme!',
     img: '',
     iFrameData: 'https://codepen.io/CharlesJ3/embed/ZEzVVbz?height=265&theme-id=dark&default-tab=result',
+    link: '',
   },{
     type: 'pens',
     name: 'Staring',
     img: '',
     iFrameData: 'https://codepen.io/CharlesJ3/embed/aboQNee?height=265&theme-id=dark&default-tab=result',
+    link: '',
   },{
     type: 'pens',
     name: 'Rain Drops',
     img: '',
     iFrameData: 'https://codepen.io/CharlesJ3/embed/xxKQOKK?height=265&theme-id=dark&default-tab=result',
+    link: '',
   },{
     type: 'pens',
     name: 'Rotating Triangles',
     img: '',
     iFrameData: 'https://codepen.io/CharlesJ3/embed/RwbvpoL?height=265&theme-id=dark&default-tab=result',
+    link: '',
   },{
     type: 'pens',
     name: 'Bubble Up!',
     img: '',
     iFrameData: 'https://codepen.io/CharlesJ3/embed/zgKvVm?height=765&theme-id=dark&default-tab=result',
+    link: '',
   },
 ];
 
@@ -170,7 +194,7 @@ const Projects = (props) => {
           {projects.map((e,index) => {
             /*
             *  Here we will use map to generate our array of objects
-            *  which contains all my sites, apps, and pens
+            *  which contains all of my sites, apps, and pens
             *
             *  Please note: && props.currentMenu is important so we do not
             *  constantly load external resources when choosing new menu due
@@ -178,14 +202,16 @@ const Projects = (props) => {
             */
             return e.type === 'site' && props.currentMenu === 3 ?
               <p className="projectsItem" key={e.name + index}>
-                {e.name} <br /><br />
-                <img
-                  className="imageHolderProjects"
-                  src={e.img }
-                  width={'80%'}
-                  alt={e.name}
-                >
-                </img>
+                <a href={e.link} rel="noopener noreferrer" target="_blank">{e.name} <br /><br />
+                  <img
+                    className="imageHolderProjects"
+                    src={e.img }
+                    width={'80%'}
+                    alt={e.name + '' + index}
+                    title={e.name}
+                  >
+                  </img>
+                </a>
               </p> : false;
             })}
         </div>
@@ -193,14 +219,16 @@ const Projects = (props) => {
           {projects.map((e,index) => {
             return e.type === 'apps' && props.currentMenu === 3 ?
             <p className="projectsItem" key={e.name + index}>
-              {e.name} <br /><br />
-              <img
-                className="imageHolderProjects"
-                src={e.img}
-                width={'75%'}
-                alt={e.name}
-              >
-              </img>
+              <a href={e.link} rel="noopener noreferrer" target="_blank">{e.name} <br /><br />
+                <img
+                  className="imageHolderProjects"
+                  src={e.img}
+                  width={'75%'}
+                  alt={e.name + '' + index}
+                  title={e.name}
+                >
+                </img>
+              </a>
             </p> : false;
           })}
         </div>
@@ -210,6 +238,7 @@ const Projects = (props) => {
           <div className="projectsPen" key={e.name + index}>
 
           <iframe
+            title={e.name}
             width={'100%'}
             height={'100%'}
             src={e.iFrameData}
@@ -217,6 +246,9 @@ const Projects = (props) => {
           </iframe>
           </div> : false;
         })}
+        <p id="codepenInfo">
+          Codepen not loading? Use the <span class="rerun">Rerun</span> button to reload it!
+        </p>
         </div>
       </div>
     </div>
