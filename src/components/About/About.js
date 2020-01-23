@@ -60,7 +60,7 @@ const About = (props) => {
       {/* Upper Right Section */}
         <video className="aboutContainer" id="aboutPic1" width="100%" height="100%" autoPlay loop src="../images/Spells/Videos/Earth0.mp4" />
         <video className="aboutContainer" id="aboutPic2" width="100%" height="100%" autoPlay loop src="../images/Spells/Videos/Rain1.mp4" />
-        <video className="aboutContainer" id="aboutPic3" width="100%" height="100%" autoPlay loop src="../images/Spells/Videos/Lightning0.mp4" />
+        <video className="aboutContainer" id="aboutPic3" width="100%" height="100%" autoPlay loop src="../images/Spells/Videos/Lightning1.mp4" />
 
       {/* Bottom Left Section */}
         <img alt="" className="aboutContainer" id="aboutPic4" src="../images/Art Weather Boss 2.gif"></img>

@@ -29,7 +29,7 @@ const projects = [
   },{
     type: 'site',
     name: 'Instructor Portals',
-    img: '../images/Portal Image 3.PNG',
+    img: '../images/Portal Image 1.PNG',
     link: 'http://portofino.vls01.com',
   },{
     type: 'site',
@@ -49,7 +49,7 @@ const projects = [
   },{
     type: 'site',
     name: 'WAHC 2014-2018',
-    img: '../images/WAHC 2014.PNG',
+    img: '../images/WAHC 2014-2018.PNG',
     link: 'https://thewahc.org',
   },{
     type: 'site',
@@ -59,7 +59,7 @@ const projects = [
   },{
     type: 'site',
     name: 'WAHCity',
-    img: '../images/WAHCity 1.png',
+    img: '../images/WAHCity All.png',
     link: 'https://thewahc.org',
   },{
     type: 'apps',

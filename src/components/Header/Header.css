@@ -1,15 +1,17 @@
 @keyframes reset1 {
 
   0% {
-    transition: all 1s;
     top: 2%;
     left: 2%;
+    width: 21%;
+    height: 95%;
   }
 
   100% {
-    transition: all 1s;
     top: 2%;
     left: 1%;
+    width: 20%;
+    height: 16%;
   }
 }
 
@@ -19,11 +21,15 @@
   0% {
     top: 9%;
     left: 21%;
+    width: 21%;
+    height: 95%;
   }
 
   100% {
     top: 19%;
     left: 1%;
+    width: 20%;
+    height: 16%;
   }
 }
 
@@ -32,11 +38,15 @@
   0% {
     top: 9%;
     left: 57%;
+    width: 21%;
+    height: 95%;
   }
 
   100% {
     top: 36%;
     left: 1%;
+    width: 20%;
+    height: 16%;
   }
 }
 
@@ -45,37 +55,50 @@
   0% {
     top: 2%;
     left: 76%;
+    width: 21%;
+    height: 95%;
   }
 
   100% {
     top: 53%;
     left: 1%;
+    width: 20%;
+    height: 45%;
   }
 }
 
-@keyframes resetM1 {
+@keyframes clipImageFun1 {
 
   0% {
-    top: 19%;
-    left: 15%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  15% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  15% {
+    clip-path: polygon(0 0, 84% 0, 83% 100%, 0% 100%);
+  }
+
+  55% {
+    clip-path: polygon(0 0, 17% 0, 16% 100%, 0% 100%);
   }
 
   100% {
-    top: 67%;
-    left: 4%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 }
 
-@keyframes resetM2 {
+
+@keyframes aboutBG {
 
   0% {
-    top: 19%;
-    left: 78%;
+    background-position: 0% 0%;
   }
 
   100% {
-    top: 67%;
-    left: 8%;
+    background-position: -3500% -2500%;
   }
 }
 
@@ -111,4 +134,29 @@
 
 .menuSelect {
   cursor: pointer;
+}
+
+.aboutMenu1, .gamesMenu1, .projectsMenu1, .hobbiesMenu1 {
+  height: 91%;
+  margin-top: 4%;
+  background-image: url('../Header/aboutBG1.png');
+}
+
+.aboutMenu1:hover, .gamesMenu1:hover, .projectsMenu1:hover, .hobbiesMenu1:hover{
+  animation: aboutBG 15s linear infinite;
+  animation-fill-mode: both;
+}
+
+.aboutMenu1Pic {
+
+}
+
+.aboutMenu2 {
+  border: 1px solid red;
+  height: 20%;
+}
+
+.aboutMenu3 {
+  border: 1px solid red;
+  height: 35%;
 }

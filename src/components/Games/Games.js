@@ -25,32 +25,32 @@ const gamesAndArt = [
     type: 'game',
     name: 'Idle Snackrifice',
     img: '../images/Game Idle Snackrifice Thumb.png',
-    img2: '../images/Game Idle Snackrifice 3.png',
+    img2: '../images/Game Idle Snackrifice Thumb.png',
     link: 'https://github.com/CharlesJ3/Idle-Snackrifice',
 
   },{
     type: 'game',
     name: 'Idle Rings',
     img: '../images/Game Idle Rings Thumb.png',
-    img2: '../images/Game Idle Rings 2.png',
+    img2: '../images/Game Idle Rings Thumb.png',
     link: 'https://github.com/CharlesJ3/Idle-Rings',
   },{
     type: 'game',
     name: 'Idle Summoner',
     img: '../images/Game Idle Summoner 2 Thumb.png',
-    img2: '../images/Game Idle Summoner 2.png',
+    img2: '../images/Game Idle Summoner 2 Thumb.png',
     link: 'https://www.kongregate.com/games/shadowxblade/idle-summoner',
   },{
     type: 'game',
     name: 'Idle Tournament',
     img: '../images/Game Idle Tournament Thumb.png',
-    img2: '../images/Game Idle Tournament.png',
+    img2: '../images/Game Idle Tournament Thumb.png',
     link: 'https://github.com/CharlesJ3/idletournaments',
   },{
     type: 'game',
     name: 'Idle Weather 3D',
-    img: '../images/Game Idle Weather Thumb.png',
-    img2: '../images/Game Idle Weather 3.png',
+    img: '../images/Game Idle Weather Thumb',
+    img2: '../images/Game Idle Weather Thumb.png',
     link: '',
   },{
     type: 'art',
@@ -510,15 +510,20 @@ const gamesAndArt = [
 
   },{
     type: 'art',
-    name: 'Snake Boss',
+    name: 'Cubey Bunch!',
     img: '',
-    img2: '../images/Art Weather Boss 3.gif',
+    img2: '../images/Art Group 1.gif',
 
   },{
     type: 'art',
     name: 'Orc Boss',
     img: '',
     img2: '../images/Art Weather Boss 4.gif',
+  },{
+    type: 'art',
+    name: 'Snake Boss',
+    img: '',
+    img2: '../images/Art Weather Boss 3.gif',
   },
 ];
 
@@ -553,7 +558,7 @@ const Games = (props) => {
                   <img
                     className="imageHoldergames"
                     src={e.img2}
-                    width={'75%'}
+                    width={'92%'}
                     alt={e.name}
                   >
                   </img>
@@ -574,7 +579,7 @@ const Games = (props) => {
                     <img
                       className="imageHoldergames"
                       src={e.img2}
-                      width={'90%'}
+                      width={'93%'}
                       alt={e.name}
                     >
                     </img>

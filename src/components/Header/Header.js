@@ -9,7 +9,6 @@ import Projects from '../Projects/Projects.js';
 const Header = (props) => {
 
   const updateMenu = (menu) => {
-
     props.updateColors(menu);
   }
 
@@ -20,17 +19,18 @@ const Header = (props) => {
     z-index: -1;
   `;
 
-  const Title = styled.p`
+  const Title = styled.h1`
     color: white;
     font-size: 2em;
     text-shadow: 1px 1px 1px rgba(${props => props.colors.currentColor1R}, ${props => props.colors.currentColor1G}, ${props => props.colors.currentColor1B}, 1);
     text-align: center;
     margin-bottom: 1%;
+    line-height: 1.1;
   `;
 
   const Menu1 = styled.div`
-    width: 20%;
-    height: 15%;
+    width: 21%;
+    height: 95%;
     top: ${props.updatePos ? '2%' : '2%'};
     left: ${props.updatePos ? '2%' : '1%'};
     border-radius: 20px;
@@ -48,15 +48,15 @@ const Header = (props) => {
     border: 1px solid rgba(${props => props.colors.currentColor2R}, ${props => props.colors.currentColor2G}, ${props => props.colors.currentColor2B}, 1);
     background: linear-gradient(
       90deg,
-      rgba(${props => props.colors.currentColor2R}, ${props => props.colors.currentColor2G}, ${props => props.colors.currentColor2B}, 1) 0%,
-      rgba(${props => props.colors.currentColor1R}, ${props => props.colors.currentColor1G}, ${props => props.colors.currentColor1B}, 1) 100%);
+      rgba(${props => props.colors.currentColor2R}, ${props => props.colors.currentColor2G}, ${props => props.colors.currentColor2B}, .31) 0%,
+      rgba(${props => props.colors.currentColor1R}, ${props => props.colors.currentColor1G}, ${props => props.colors.currentColor1B}, .31) 100%);
   `;
 
   const Menu2 = styled.div`
-    width: 20%;
-    height: 15%;
-    top: ${props.updatePos ? '9%' : '19%'};
-    left: ${props.updatePos ? '21%' : '1%'};
+    width: 21%;
+    height: 95%;
+    top: ${props.updatePos ? '2%' : '19%'};
+    left: ${props.updatePos ? '27%' : '1%'};
     border-radius: 20px;
     box-shadow: 0px 5px 1px rgb(${props => props.colors.currentColor1R}, ${props => props.colors.currentColor1G}, ${props => props.colors.currentColor1B});
     position: absolute;
@@ -72,15 +72,15 @@ const Header = (props) => {
     border: 1px solid rgba(${props => props.colors.currentColor2R}, ${props => props.colors.currentColor2G}, ${props => props.colors.currentColor2B}, 1);
     background: linear-gradient(
       90deg,
-      rgba(${props => props.colors.currentColor2R}, ${props => props.colors.currentColor2G}, ${props => props.colors.currentColor2B}, 1) 0%,
-      rgba(${props => props.colors.currentColor1R}, ${props => props.colors.currentColor1G}, ${props => props.colors.currentColor1B}, 1) 100%);
+      rgba(${props => props.colors.currentColor2R}, ${props => props.colors.currentColor2G}, ${props => props.colors.currentColor2B}, .31) 0%,
+      rgba(${props => props.colors.currentColor1R}, ${props => props.colors.currentColor1G}, ${props => props.colors.currentColor1B}, .31) 100%);
   `;
 
   const Menu3 = styled.div`
-    width: 20%;
-    height: 15%;
-    top: ${props.updatePos ? '9%' : '36%'};
-    left: ${props.updatePos ? '57%' : '1%'};
+    width: 21%;
+    height: 95%;
+    top: ${props.updatePos ? '2%' : '36%'};
+    left: ${props.updatePos ? '52%' : '1%'};
     border-radius: 20px;
     box-shadow: 0px 5px 1px rgb(${props => props.colors.currentColor1R}, ${props => props.colors.currentColor1G}, ${props => props.colors.currentColor1B});
     position: absolute;
@@ -96,13 +96,13 @@ const Header = (props) => {
     border: 1px solid rgba(${props => props.colors.currentColor2R}, ${props => props.colors.currentColor2G}, ${props => props.colors.currentColor2B}, 1);
     background: linear-gradient(
       90deg,
-      rgba(${props => props.colors.currentColor2R}, ${props => props.colors.currentColor2G}, ${props => props.colors.currentColor2B}, 1) 0%,
-      rgba(${props => props.colors.currentColor1R}, ${props => props.colors.currentColor1G}, ${props => props.colors.currentColor1B}, 1) 100%);
+      rgba(${props => props.colors.currentColor2R}, ${props => props.colors.currentColor2G}, ${props => props.colors.currentColor2B}, .31) 0%,
+      rgba(${props => props.colors.currentColor1R}, ${props => props.colors.currentColor1G}, ${props => props.colors.currentColor1B}, .31) 100%);
   `;
 
   const Menu4 = styled.div`
-    width: 20%;
-    height: 15%;
+    width: 21%;
+    height: 95%;
     top: ${props.updatePos ? '2%' : '56%'};
     left: ${props.updatePos ? '76%' : '1%'};
     border-radius: 20px;
@@ -120,8 +120,8 @@ const Header = (props) => {
     border: 1px solid rgba(${props => props.colors.currentColor2R}, ${props => props.colors.currentColor2G}, ${props => props.colors.currentColor2B}, 1);
     background: linear-gradient(
       90deg,
-      rgba(${props => props.colors.currentColor2R}, ${props => props.colors.currentColor2G}, ${props => props.colors.currentColor2B}, 1) 0%,
-      rgba(${props => props.colors.currentColor1R}, ${props => props.colors.currentColor1G}, ${props => props.colors.currentColor1B}, 1) 100%);
+      rgba(${props => props.colors.currentColor2R}, ${props => props.colors.currentColor2G}, ${props => props.colors.currentColor2B}, .31) 0%,
+      rgba(${props => props.colors.currentColor1R}, ${props => props.colors.currentColor1G}, ${props => props.colors.currentColor1B}, .31) 100%);
   `;
 ;
 
@@ -135,19 +135,22 @@ const Header = (props) => {
         className="menuSelect"
         id="menu1"
         onClick={() => updateMenu(1)}>
+
           <Title colors={props.colors}>
             About Me
           </Title>
+          <div className="aboutMenu1">
+            <img className="aboutMenu1Pic" src="../images/aboutMainImages1.gif"></img>
+            <img className="aboutMenu2Pic" src="../images/Art Weather 5.gif"></img>
+            <img className="aboutMenu3Pic" src="../images/Art Group 1.gif"></img>
+          </div>
       </Menu1>
+
       <About
         colors={props.colors}
         updatePos={props.updatePos}
         currentMenu={props.currentMenu}
       />
-
-      {/* <MiniMenu1 colors={props.colors} className="menuSelect" id="menu5" onClick={updateMenu}>
-        <Title colors={props.colors}>HOME</Title>
-      </MiniMenu1> */}
 
       <Menu2
         colors={props.colors}
@@ -160,6 +163,11 @@ const Header = (props) => {
         colors={props.colors}>
           Games and Art
         </Title>
+        <div className="gamesMenu1">
+          <img className="gamesMenu1Pic" src="../images/aboutMainImages1.gif"></img>
+          <img className="gamesMenu2Pic" src="../images/Art Weather 5.gif"></img>
+          <img className="gamesMenu3Pic" src="../images/Art Group 1.gif"></img>
+        </div>
       </Menu2>
 
       <Games
@@ -174,7 +182,14 @@ const Header = (props) => {
         className="menuSelect"
         id="menu3"
         onClick={() => updateMenu(3)}>
-        <Title colors={props.colors}>Projects and Extras</Title>
+        <Title colors={props.colors}>
+          Sites and Projects
+        </Title>
+        <div className="projectsMenu1">
+          <img className="projectsMenu1Pic" src="../images/aboutMainImages1.gif"></img>
+          <img className="projectsMenu2Pic" src="../images/Art Weather 5.gif"></img>
+          <img className="projectsMenu3Pic" src="../images/Art Group 1.gif"></img>
+        </div>
       </Menu3>
 
       <Projects
@@ -182,16 +197,7 @@ const Header = (props) => {
         updatePos={props.updatePos}
         currentMenu={props.currentMenu}
       />
-        {/* <MiniMenu2
-          colors={props.colors}
-          className="menuSelect"
-          id="menu6"
-          onClick={updateMenu}>
 
-          <Title colors={props.colors}>
-            Built With
-          </Title>
-        </MiniMenu2> */}
       <Menu4
         updatePos={props.updatePos}
         colors={props.colors}
@@ -201,6 +207,11 @@ const Header = (props) => {
         <Title colors={props.colors}>
           Hobbies and Links
         </Title>
+        <div className="hobbiesMenu1">
+          <img className="hobbiesMenu1Pic" src="../images/aboutMainImages1.gif"></img>
+          <img className="hobbiesMenu2Pic" src="../images/Art Weather 5.gif"></img>
+          <img className="hobbiesMenu3Pic" src="../images/Art Group 1.gif"></img>
+        </div>
       </Menu4>
 
       <Hobbies
