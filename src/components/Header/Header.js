@@ -2,7 +2,6 @@ import React from 'react';
 import '../Header/Header.css';
 import styled from 'styled-components';
 import About from '../About/About.js';
-import Contact from '../Contact/Contact.js';
 import Games from '../Games/Games.js';
 import Hobbies from '../Hobbies/Hobbies.js';
 import Projects from '../Projects/Projects.js';
@@ -124,31 +123,7 @@ const Header = (props) => {
       rgba(${props => props.colors.currentColor2R}, ${props => props.colors.currentColor2G}, ${props => props.colors.currentColor2B}, 1) 0%,
       rgba(${props => props.colors.currentColor1R}, ${props => props.colors.currentColor1G}, ${props => props.colors.currentColor1B}, 1) 100%);
   `;
-
-
-  const MiniMenu1 = styled.div`
-    width: 5%;
-    height: 10%;
-    text-shadow: rgba(${props => props.colors.currentColor1R}, ${props => props.colors.currentColor1G}, ${props => props.colors.currentColor1B}, 1) 5px 5px 5px;
-    border-radius: 20px;
-    box-shadow: rgba(${props => props.colors.currentColor1R}, ${props => props.colors.currentColor1G}, ${props => props.colors.currentColor1B}, 1) 5px 5px 5px;
-    color: red;
-    position: absolute;
-    top: 19%;
-    left: 15%;
-  `;
-
-  const MiniMenu2 = styled.div`
-    width: 5%;
-    height: 10%;
-    text-shadow: rgba(${props => props.colors.currentColor1R}, ${props => props.colors.currentColor1G}, ${props => props.colors.currentColor1B}, 1) 5px 5px 5px;
-    border-radius: 20px;
-    box-shadow: rgba(${props => props.colors.currentColor1R}, ${props => props.colors.currentColor1G}, ${props => props.colors.currentColor1B}, 1) 5px 5px 5px;
-    color: red;
-    position: absolute;
-    top: 19%;
-    left: 78%;
-  `;
+;
 
   return (
 

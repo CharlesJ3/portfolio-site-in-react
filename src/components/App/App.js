@@ -10,7 +10,7 @@ class App extends React.Component {
 
       this.state = ({
         colors: {
-          
+
           //The Current First color for Styled Divs
           currentColor1R: 225,
           currentColor1B: 21,
@@ -403,11 +403,6 @@ class App extends React.Component {
           currentMenu={this.state.currentMenu}
         >
         </Header>
-        {/* <About />
-        <Projects />
-        <Hobbies />
-        <Contact />
-        <Footer /> */}
       </div>
     );
   }

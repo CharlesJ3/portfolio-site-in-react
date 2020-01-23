@@ -549,7 +549,7 @@ const Games = (props) => {
             */
             return e.type === 'game' && props.currentMenu === 2 ?
               <p className="gamesItemGames" key={e.name + index}>
-                <a href={e.link} target="_blank">{e.name} <br /><br />
+                <a href={e.link} target="_blank" rel="noopener noreferrer">{e.name} <br /><br />
                   <img
                     className="imageHoldergames"
                     src={e.img2}

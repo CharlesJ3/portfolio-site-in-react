@@ -35,26 +35,26 @@ const About = (props) => {
           <img
             className="aboutContainer"
             id="about1"
-            src="../images/aboutImage1.jpg">
+            src="../images/aboutImage1.jpg"
+            alt="">
           </img>
           <img
             className="aboutContainer"
             id="about2"
-            src="../images/aboutImage2.jpg">
+            src="../images/aboutImage2.jpg"
+            alt="">
           </img>
-          <br></br>
         </div>
         <div><h2>HELLO WORLD!</h2>
-        <br></br>
-          <img alt="about cubey left" className="aboutCubey" id="aboutCubey1" src="../images/UI/aboutCubey1.png"></img>
+          <img alt="" className="aboutCubey" id="aboutCubey1" src="../images/UI/aboutCubey1.png"></img>
           <p>
           I'm Charles. I do full-stack development, along with some random design when needed. I'm a developer, a veteran,
           a father, and a constant learner. Report a bug or contact
           me <a href="mailto:c.jones.3.zero@gmail.com">here!</a>
           </p>
-          <img alt="about cubey right" className="aboutCubey" id="aboutCubey2" src="../images/UI/aboutCubey2.png"></img>
+          <img alt="" className="aboutCubey" id="aboutCubey2" src="../images/UI/aboutCubey2.png"></img>
         </div>
-                  <br></br>
+          <br></br>
       </div>
 
       {/* Upper Right Section */}
@@ -63,9 +63,9 @@ const About = (props) => {
         <video className="aboutContainer" id="aboutPic3" width="100%" height="100%" autoPlay loop src="../images/Spells/Videos/Lightning0.mp4" />
 
       {/* Bottom Left Section */}
-        <img className="aboutContainer" id="aboutPic4" src="../images/Art Weather Boss 2.gif"></img>
-        <img className="aboutContainer" id="aboutPic5" src="../images/Art Group 1.gif"></img>
-        <img className="aboutContainer" id="aboutPic6" src="../images/Art Weather Boss 3.gif"></img>
+        <img alt="" className="aboutContainer" id="aboutPic4" src="../images/Art Weather Boss 2.gif"></img>
+        <img alt="" className="aboutContainer" id="aboutPic5" src="../images/Art Group 1.gif"></img>
+        <img alt="" className="aboutContainer" id="aboutPic6" src="../images/Art Weather Boss 3.gif"></img>
     </div>
   </AboutDetails>
  )

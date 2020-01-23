@@ -214,6 +214,9 @@ const Projects = (props) => {
                 </a>
               </p> : false;
             })}
+         <p id="codepenInfo">
+          Websites that I have played the majority role in developing, designing, and architecting.
+        </p>
         </div>
         <div id="projectSection2">
           {projects.map((e,index) => {
@@ -231,6 +234,9 @@ const Projects = (props) => {
               </a>
             </p> : false;
           })}
+         <p id="codepenInfo">
+          A few apps I have made, or am currently making, in ReactJS!
+        </p>
         </div>
         <div id="projectSection3">
         {projects.map((e,index) => {
@@ -247,7 +253,7 @@ const Projects = (props) => {
           </div> : false;
         })}
         <p id="codepenInfo">
-          Codepen not loading? Use the <span class="rerun">Rerun</span> button to reload it!
+          Codepen not loading? Use the <span className="rerun">Rerun</span> button to reload it!
         </p>
         </div>
       </div>
