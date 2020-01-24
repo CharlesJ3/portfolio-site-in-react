@@ -1,6 +1,4 @@
-{ "start": "react-scripts --max_old_space_size=8192 start",
-  "build": "react-scripts --max_old_space_size=8192 build",
-
+{
   "name": "charles-jones-dot-me",
   "version": "0.1.0",
   "private": true,
