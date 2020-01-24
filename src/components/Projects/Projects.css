@@ -242,7 +242,7 @@
   background-repeat: no-repeat;
   background-position-x: 55%;
   background-position-y: -240%;
-  animation: peekMid 5s ease-in 1;
+  animation: peekMid 3s ease-in 1;
   animation-fill-mode: forwards;
 }
 

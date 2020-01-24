@@ -21,11 +21,12 @@ const Header = (props) => {
 
   const Title = styled.h1`
     color: white;
-    font-size: 2em;
+    font-size: 2.5em;
     text-shadow: 1px 1px 1px rgba(${props => props.colors.currentColor1R}, ${props => props.colors.currentColor1G}, ${props => props.colors.currentColor1B}, 1);
     text-align: center;
     margin-bottom: 1%;
-    line-height: 1.1;
+    z-index: 3;
+    line-height: 1.35;
   `;
 
   const Menu1 = styled.div`
@@ -139,10 +140,15 @@ const Header = (props) => {
           <Title colors={props.colors}>
             About Me
           </Title>
-          <div className="aboutMenu1">
-            <img className="aboutMenu1Pic" src="../images/aboutMainImages1.gif"></img>
+          {console.log(props.updatePos)}
+          <div className={props.updatePos === 1 ? "aboutMenu1" : "hide"}>
+            <div className={props.updatePos === 1 ? "cubeyHi1" : "hide"}>
+
+            </div>
+            <img className="aboutInfo" src="../images/aboutInfo.png"></img>
+            {/* <img className="aboutMenu1Pic" src="../images/aboutMainImages1.gif"></img>
             <img className="aboutMenu2Pic" src="../images/Art Weather 5.gif"></img>
-            <img className="aboutMenu3Pic" src="../images/Art Group 1.gif"></img>
+            <img className="aboutMenu3Pic" src="../images/Art Group 1.gif"></img> */}
           </div>
       </Menu1>
 
@@ -163,10 +169,13 @@ const Header = (props) => {
         colors={props.colors}>
           Games and Art
         </Title>
-        <div className="gamesMenu1">
-          <img className="gamesMenu1Pic" src="../images/aboutMainImages1.gif"></img>
+        <div className={props.updatePos === 1 ? "gamesMenu1" : ""}>
+            <div className={props.updatePos === 1 ? "cubeyHi2" : ""}>
+
+          </div>
+          {/* <img className="gamesMenu1Pic" src="../images/aboutMainImages1.gif"></img>
           <img className="gamesMenu2Pic" src="../images/Art Weather 5.gif"></img>
-          <img className="gamesMenu3Pic" src="../images/Art Group 1.gif"></img>
+          <img className="gamesMenu3Pic" src="../images/Art Group 1.gif"></img> */}
         </div>
       </Menu2>
 
@@ -185,10 +194,13 @@ const Header = (props) => {
         <Title colors={props.colors}>
           Sites and Projects
         </Title>
-        <div className="projectsMenu1">
-          <img className="projectsMenu1Pic" src="../images/aboutMainImages1.gif"></img>
+        <div className={props.updatePos === 1 ? "projectsMenu1" : ""}>
+            <div className={props.updatePos === 1 ? "cubeyHi3" : ""}>
+
+        </div>
+          {/* <img className="projectsMenu1Pic" src="../images/aboutMainImages1.gif"></img>
           <img className="projectsMenu2Pic" src="../images/Art Weather 5.gif"></img>
-          <img className="projectsMenu3Pic" src="../images/Art Group 1.gif"></img>
+          <img className="projectsMenu3Pic" src="../images/Art Group 1.gif"></img> */}
         </div>
       </Menu3>
 
@@ -207,10 +219,13 @@ const Header = (props) => {
         <Title colors={props.colors}>
           Hobbies and Links
         </Title>
-        <div className="hobbiesMenu1">
-          <img className="hobbiesMenu1Pic" src="../images/aboutMainImages1.gif"></img>
+        <div className={props.updatePos === 1 ? "hobbiesMenu1" : ""}>
+            <div className={props.updatePos === 1 ? "cubeyHi4" : ""}>
+
+        </div>
+          {/* <img className="hobbiesMenu1Pic" src="../images/aboutMainImages1.gif"></img>
           <img className="hobbiesMenu2Pic" src="../images/Art Weather 5.gif"></img>
-          <img className="hobbiesMenu3Pic" src="../images/Art Group 1.gif"></img>
+          <img className="hobbiesMenu3Pic" src="../images/Art Group 1.gif"></img> */}
         </div>
       </Menu4>
 
