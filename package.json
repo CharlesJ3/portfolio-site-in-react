@@ -1,4 +1,6 @@
-{
+{ "start": "react-scripts --max_old_space_size=4096 start",
+  "build": "react-scripts --max_old_space_size=4096 build",
+  
   "name": "charles-jones-dot-me",
   "version": "0.1.0",
   "private": true,
@@ -34,4 +36,5 @@
       "last 1 safari version"
     ]
   }
+  
 }
