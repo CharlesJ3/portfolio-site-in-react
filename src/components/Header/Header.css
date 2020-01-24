@@ -113,7 +113,7 @@
   }
 
   100% {
-    background-position-y: 100%;
+    background-position-y: 80%;
   }
 }
 
@@ -128,7 +128,7 @@
   }
 
   100% {
-    background-position-x: 30%;
+    background-position-x: 70%;
   }
 }
 
@@ -154,7 +154,7 @@
   }
 
   100% {
-    background-position-y: 110%;
+    background-position-y: 80%;
   }
 }
 
@@ -232,14 +232,13 @@
   background-position-y: 250%;
   background-position-x: 25%;
   background-size: 135%;
-  z-index: 1;
 }
 
 .cubeyHi2 {
   background-image: url('../Header/cubey2.png');
   background-repeat: no-repeat;
   background-position-x: -155%;
-  background-position-y: 105%;
+  background-position-y: 80%;
   background-size: 165%;
 }
 
@@ -291,9 +290,9 @@
   display: none;
 }
 
-.aboutInfo {
+.aboutInfo, .gamesInfo, .projectsInfo, .hobbiesInfo {
   position: absolute;
-  top: 52%;
-  left: -6%;
-  width: 116%;
+  top: 79%;
+  left: -7%;
+  width: 115%;
 }

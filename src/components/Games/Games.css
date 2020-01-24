@@ -4,8 +4,8 @@
     opacity: 0;
   }
 
-  15% {
-    opacity: 1;
+  25% {
+    opacity: .5;
   }
 
   100% {

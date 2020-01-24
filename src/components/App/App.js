@@ -351,8 +351,6 @@ class App extends React.Component {
       ring17.rotation.z += .020;
       ring18.rotation.z += .025;
 
-
-      //Orbital Rotations
       //We'll check to see what current status we have to do movements
 
         ring7.position.x = -83 * Math.sin(Date.now() / 5000);
