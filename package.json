@@ -17,11 +17,10 @@
     "three": "^0.111.0"
   },
   "scripts": {
-    "start": "react-scripts --max_old_space_size=8096 start",
-    "build": "react-scripts --max_old_space_size=8096 build",
+    "start": "serve -s build --max_old_space_size=8096",
+    "build": "react-scripts --max_old_space_size=8096",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
