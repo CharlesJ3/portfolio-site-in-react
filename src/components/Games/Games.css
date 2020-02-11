@@ -160,7 +160,7 @@
 
 .gamesItemGames {
   color: white;
-  flex: 1 1 50%;
+  flex: 1 1 70%;
   text-align: center;
   font-size: 1.5rem;
   text-decoration: underline;
@@ -242,4 +242,74 @@
 
 #gameImage, #gameImage2 {
   width: 100%;
+}
+
+
+/**
+*
+* RESPONSIVE
+*
+**/
+
+@media only screen and (max-width: 500px) {
+  #gamesTop h2 {
+    font-size: .9rem;
+  }
+
+  .gamesItemGames {
+    font-size: 1rem;
+    margin-top: 1%;
+  }
+
+  .gamesItemArt {
+    flex: 1 1 50%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  #gamesTop h2 {
+    font-size: 1rem;
+  }
+
+  .gamesItemGames {
+    font-size: 1.15rem;
+    margin-top: 1%;
+  }
+
+  .gamesItemArt {
+    flex: 1 1 32%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #gamesTop h2 {
+    font-size: 1.4rem;
+  }
+
+  .gamesItemGames {
+    font-size: 1.35rem;
+    margin-top: 2%;
+  }
+
+  .gameImageGames, .gameImageArt {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.95);
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+  .gamesItemArt {
+    flex: 1 1 25%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
 }

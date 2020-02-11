@@ -49,7 +49,7 @@ const projects = [
   },{
     type: 'site',
     name: 'WAHC 2014-2018',
-    img: '../images/WAHC 2014-2018.PNG',
+    img: '../images/WAHC 2014-2018.png',
     link: 'https://thewahc.org',
   },{
     type: 'site',
@@ -66,6 +66,11 @@ const projects = [
     name: 'Movie Selector - Drop the Ball!',
     img: '../images/App 1.PNG',
     link: 'http://movie-selector.herokuapp.com/',
+  },{
+    type: 'apps',
+    name: 'Idle Tournaments (In Progress)',
+    img: '../images/Game Idle Tournament Thumb.png',
+    link: 'https://github.com/CharlesJ3/idletournaments',
   },{
     type: 'apps',
     name: 'Always Funny',
@@ -215,7 +220,7 @@ const Projects = (props) => {
               </p> : false;
             })}
          <p id="codepenInfo">
-          Websites that I have played the majority role in developing, designing, and architecting.
+          Websites I designed, developed, and architected
         </p>
         </div>
         <div id="projectSection2">

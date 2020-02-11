@@ -189,7 +189,7 @@
   text-decoration: underline;
   text-decoration-color: deepskyblue;
   text-decoration-style: double;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 #about1 {
@@ -315,4 +315,65 @@
   right: -42%;
   animation: aboutCubey2 2.25s ease-in;
   animation-fill-mode: forwards;
+}
+
+/**
+*
+* RESPONSIVE
+*
+**/
+
+@media only screen and (max-width: 500px) {
+  #aboutMain p {
+    font-size: 1rem;
+  }
+
+  #aboutMain h2 {
+    font-size: 1.15rem;
+  }
+
+  #aboutPic4, #aboutPic5, #aboutPic6 {
+    width: 21%;
+    height: 12%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+
+  #aboutMain p {
+    font-size: 1.15rem;
+  }
+
+  #aboutMain h2 {
+    font-size: 1.45rem;
+  }
+
+  #aboutPic4, #aboutPic5, #aboutPic6 {
+    width: 21%;
+    height: 17%;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  #aboutMain h2 {
+    font-size: 2rem;
+  }
+
+  #aboutPic4, #aboutPic5, #aboutPic6 {
+    width: 21%;
+    height: 17%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+  #aboutMain h2 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
 }

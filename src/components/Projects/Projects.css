@@ -324,7 +324,7 @@
 #codepenInfo:hover {
   text-shadow: 4px 4px 12px pink;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   position: fixed;
   color: white;
   margin: 0 auto;
@@ -339,7 +339,7 @@
 #codepenInfo {
   text-shadow: 1px 1px 3px deeppink;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   top: 19.5%;
   position: fixed;
   color: white;
@@ -363,4 +363,60 @@
   border: 0;
   color: #eeeeee;
   background-color: #333333;
+}
+
+
+/**
+*
+* RESPONSIVE
+*
+**/
+
+@media only screen and (max-width: 500px) {
+  .projectsItem {
+    flex: 1 1 40%;
+    font-size: 1.25rem;
+    margin-top: 1%;
+  }
+
+  #projectsHeader button {
+    font-size: 1.75rem;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .projectsItem {
+    flex: 1 1 40%;
+    font-size: 1.25rem;
+    margin-top: 1%;
+  }
+
+  #projectsHeader button {
+    font-size: 1.75rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .projectsItem {
+    flex: 1 1 40%;
+    font-size: 1.25rem;
+    margin-top: 1%;
+  }
+
+  #projectsHeader button {
+    font-size: 1.75rem;
+  }
+
+
+  #projectButtons:before {
+    font-size: 1.9rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
 }

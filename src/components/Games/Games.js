@@ -541,7 +541,7 @@ const Games = (props) => {
 
         {/* Games (left) */}
         <div className="gameSectionGames" id="leftDisplay">
-          <h2 className="gamesTitles">Games (Finished/Unfinished)</h2>
+          <h2 className="gamesTitles">Games (Done/In Progress)</h2>
           <div className="gameImageGames">
           {gamesAndArt.map((e,index) => {
             /*
@@ -558,7 +558,7 @@ const Games = (props) => {
                   <img
                     className="imageHoldergames"
                     src={e.img2}
-                    width={'92%'}
+                    width={'82%'}
                     alt={e.name}
                   >
                   </img>
@@ -571,7 +571,7 @@ const Games = (props) => {
 
         {/* Art (right) */}
           <div className="gameSectionArt" id="rightDisplay">
-            <h2 className="gamesTitles">Art (Finished/Unfinished)</h2>
+            <h2 className="gamesTitles">Art (Done/In Progress)</h2>
             <div className="gameImageArt">
               {gamesAndArt.map((e,index) => {
                 return e.type === 'art' && props.currentMenu === 2 ?

@@ -145,7 +145,7 @@ const Header = (props) => {
             <div className={props.updatePos === 1 ? "cubeyHi1" : "hide"}>
 
             </div>
-            <img className={props.updatePos === 1 ? "aboutInfo" : "hide"} src="../images/aboutInfo2.png"></img>
+            <img  alt={''} className={props.updatePos === 1 ? "aboutInfo" : "hide"} src="../images/aboutInfo2.png"></img>
             {/* <img className="aboutMenu1Pic" src="../images/aboutMainImages1.gif"></img>
             <img className="aboutMenu2Pic" src="../images/Art Weather 5.gif"></img>
             <img className="aboutMenu3Pic" src="../images/Art Group 1.gif"></img> */}
@@ -173,7 +173,7 @@ const Header = (props) => {
             <div className={props.updatePos === 1 ? "cubeyHi2" : ""}>
 
         </div>
-        <img className={props.updatePos === 1 ? "gamesInfo" : "hide"} src="../images/gameInfo2.png"></img>
+        <img  alt={''} className={props.updatePos === 1 ? "gamesInfo" : "hide"} src="../images/gameInfo2.png"></img>
           {/* <img className="gamesMenu1Pic" src="../images/aboutMainImages1.gif"></img>
           <img className="gamesMenu2Pic" src="../images/Art Weather 5.gif"></img>
           <img className="gamesMenu3Pic" src="../images/Art Group 1.gif"></img> */}
@@ -199,7 +199,7 @@ const Header = (props) => {
             <div className={props.updatePos === 1 ? "cubeyHi3" : ""}>
 
         </div>
-        <img className={props.updatePos === 1 ? "projectsInfo" : "hide"} src="../images/projectInfo2.png"></img>
+        <img alt={''} className={props.updatePos === 1 ? "projectsInfo" : "hide"} src="../images/projectInfo2.png"></img>
           {/* <img className="projectsMenu1Pic" src="../images/aboutMainImages1.gif"></img>
           <img className="projectsMenu2Pic" src="../images/Art Weather 5.gif"></img>
           <img className="projectsMenu3Pic" src="../images/Art Group 1.gif"></img> */}
@@ -224,7 +224,7 @@ const Header = (props) => {
         <div className={props.updatePos === 1 ? "hobbiesMenu1" : ""}>
             <div className={props.updatePos === 1 ? "cubeyHi4" : ""}>
         </div>
-        <img className={props.updatePos === 1 ? "hobbiesInfo" : "hide"} src="../images/hobbiesInfo2.png"></img>
+        <img  alt={''} className={props.updatePos === 1 ? "hobbiesInfo" : "hide"} src="../images/hobbiesInfo2.png"></img>
           {/* <img className="hobbiesMenu1Pic" src="../images/aboutMainImages1.gif"></img>
           <img className="hobbiesMenu2Pic" src="../images/Art Weather 5.gif"></img>
           <img className="hobbiesMenu3Pic" src="../images/Art Group 1.gif"></img> */}
