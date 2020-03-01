@@ -38,12 +38,36 @@ const Hobbies = (props) => {
 
       </div>
 
-      <div>
-      {/* PUT HOBBY STUFF HERE */}
-
+      <div class="hobbieMain">
+        <div class="hobbiesActual">
+          <h2 class="hobbiesTitle" alt="title">Hobbies!</h2>
+          <p>2020 Goals</p>
+            <ul>
+              <li><span class="highlight">Weightlifting</span> - 1000 Pound club by July</li>
+              <li><span class="highlight">Gaming</span> - Finish and launch my second game</li>
+              <li><span class="highlight">Family</span> - Take my kids to Texas for Vacation</li>
+            </ul>
+        </div>
+        <div class="hobbiesLinks">
+          <h2 class="hobbiesTitle" alt="title">Links!</h2>
+          <p>
+            <a href="https://idle-weather.herokuapp.com/">Idle Weather (pre-pre-Alpha!)</a><br />
+            <a href="https://github.com/CharlesJ3" target="_blank" rel="noopener noreferrer">Github</a><br />
+            <a href="https://codepen.io/CharlesJ3/" target="_blank" rel="noopener noreferrer">Codepen</a><br />
+            <a href="https://www.codewars.com/users/CharlesJ3" target="_blank" rel="noopener noreferrer">Codewars!</a><br />
+            <a href="http://charlesjones.me/" target="_blank" rel="noopener noreferrer">Old Portfolio Site!</a><br />
+          </p>
+        </div>
+        <div class="hobbiesContact">
+          <h2 class="hobbiesTitle" alt="title">Contacts!</h2>
+          <p>
+            <a href="mailto:c.jones.3.zero@gmail.com">Email</a><br />
+            <a href="https://www.linkedin.com/in/charlesjonesiii/" target="_blank" rel="noopener noreferrer">LinkedIn</a><br />
+            <a href="https://github.com/CharlesJ3" target="_blank" rel="noopener noreferrer">Github</a><br />
+            <a href="https://www.kongregate.com/accounts/Shadowxblade" target="_blank" rel="noopener noreferrer">Kongregate</a><br />
+          </p>
+        </div>
       </div>
-
-
     </div>
   </HobbiesDetails>
  )

@@ -165,3 +165,100 @@
   left: 80%;
   bottom: -20%;
 }
+
+.hobbiesActual {
+  position: absolute;
+  top: 5%;
+  left: 6%;
+  width: 32vw;
+  height: 32vh;
+  border: 4px solid rgba(255,237,5,.85);
+  z-index: 1;
+  background-color: rgb(255, 0, 157, .15);
+  box-shadow: inset 0px 0px 11px rgb(219, 99, 173), 0px 7px 16px rgb(255, 0, 157);
+}
+
+.hobbiesLinks {
+  position: absolute;
+  top: 22%;
+  left: 52%;
+  width: 32vw;
+  height: 32vh;
+  border: 4px solid rgba(255,237,5,.85);
+  z-index: 1;
+  background-color: rgb(255, 0, 157, .15);
+  box-shadow: inset 0px 0px 11px rgb(219, 99, 173), 0px 7px 16px rgb(255, 0, 157);
+}
+
+.hobbiesContact {
+  position: absolute;
+  top: 62%;
+  left: 22%;
+  width: 32vw;
+  height: 32vh;
+  border: 4px solid rgba(255,237,5,.85);
+  z-index: 1;
+  background-color: rgb(255, 0, 157, .15);
+  box-shadow: inset 0px 0px 11px rgb(219, 99, 173), 0px 7px 16px rgb(255, 0, 157);
+}
+
+.hobbiesTitle {
+  text-align: center;
+  border-bottom: 2px solid yellow;
+  box-shadow: 1px 1px 1px pink;
+  color: white;
+  text-shadow: 2px 2px 1px black, -1px -2px 1px deeppink;
+  text-transform: uppercase;
+}
+
+.hobbiesLinks p {
+  text-align: center;
+  line-height: 2em;
+}
+
+.hobbiesActual p {
+  text-align: center;
+  line-height: 2em;
+  color: white;
+  list-style-type: none;
+  text-decoration: underline;
+}
+
+.hobbiesActual ul {
+  text-decoration: none;
+  font-size: 1.25em;
+  list-style-type: none;
+  text-align: left;
+  color: white;
+}
+
+.highlight {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/**
+*
+* RESPONSIVE
+*
+**/
+
+@media only screen and (max-width: 500px) {
+
+}
+
+@media only screen and (min-width: 500px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}

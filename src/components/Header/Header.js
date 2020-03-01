@@ -137,7 +137,7 @@ const Header = (props) => {
         id="menu1"
         onClick={() => updateMenu(1)}>
 
-          <Title colors={props.colors}>
+          <Title class="titleMain" colors={props.colors}>
             About Me
           </Title>
           {console.log(props.updatePos)}
@@ -165,8 +165,7 @@ const Header = (props) => {
         id="menu2"
         onClick={() => updateMenu(2)}>
 
-        <Title
-        colors={props.colors}>
+        <Title class="titleMain" colors={props.colors}>
           Games and Art
         </Title>
          <div className={props.updatePos === 1 ? "gamesMenu1" : ""}>
@@ -192,7 +191,7 @@ const Header = (props) => {
         className="menuSelect"
         id="menu3"
         onClick={() => updateMenu(3)}>
-        <Title colors={props.colors}>
+        <Title class="titleMain" colors={props.colors}>
           Sites and Projects
         </Title>
         <div className={props.updatePos === 1 ? "projectsMenu1" : ""}>
@@ -218,7 +217,7 @@ const Header = (props) => {
         className="menuSelect"
         id="menu4"
         onClick={() => updateMenu(4)}>
-        <Title colors={props.colors}>
+        <Title class="titleMain" colors={props.colors}>
           Hobbies and Links
         </Title>
         <div className={props.updatePos === 1 ? "hobbiesMenu1" : ""}>

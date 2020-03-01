@@ -13,20 +13,20 @@
   }
 }
 
-.transitionMe {
-
-}
+.transitionMe {}
 
 .gamesContainer {
   display: flex;
 }
 
-#gamesTop, #gamesBottom {
+#gamesTop,
+#gamesBottom {
   position: absolute;
   width: 97%;
 }
 
-#gamesTop, #gamesBottom {
+#gamesTop,
+#gamesBottom {
   top: 3%;
   left: 1%;
   height: 95%;
@@ -36,13 +36,15 @@
   display: inherit;
 }
 
-.gameSectionGames, .gameSectionArt {
+.gameSectionGames,
+.gameSectionArt {
   width: 50%;
   overflow: scroll;
   overflow-x: hidden;
 }
 
-.gameSectionGames a, .gameSectionArt a {
+.gameSectionGames a,
+.gameSectionArt a {
   text-decoration-style: double;
 }
 
@@ -65,8 +67,8 @@
   text-decoration: underline;
   text-shadow:
     #FFC 0px 0px 1px,
-       rgb(0, 0, 0) 1px 1px 2px,
-         rgb(38, 255, 0) 0px 0px 5px;
+    rgb(0, 0, 0) 1px 1px 2px,
+    rgb(38, 255, 0) 0px 0px 5px;
   margin-top: 4%;
 }
 
@@ -122,7 +124,7 @@
   z-index: 2;
 }
 
-#gamesHeader{
+#gamesHeader {
   width: 95%;
   height: 17%;
   left: 2%;
@@ -165,9 +167,9 @@
   font-size: 1.5rem;
   text-decoration: underline;
   text-shadow:
-  rgb(0, 0, 0) 1px 1px 2px,
-      rgb(0, 0, 0) 0px 0px 2px,
-        rgb(38, 255, 0) 0px 0px 5px;
+    rgb(0, 0, 0) 1px 1px 2px,
+    rgb(0, 0, 0) 0px 0px 2px,
+    rgb(38, 255, 0) 0px 0px 5px;
   margin-top: 4%;
 }
 
@@ -230,17 +232,19 @@
   border-radius: 0%;
 }
 
-.gameImageGames, .gameImageArt {
+.gameImageGames,
+.gameImageArt {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
   justify-content: space-around;
   align-content: center;
   align-items: center;
-  background-color: rgba(0,0,0,.95);
+  background-color: rgba(0, 0, 0, .95);
 }
 
-#gameImage, #gameImage2 {
+#gameImage,
+#gameImage2 {
   width: 100%;
 }
 
@@ -277,7 +281,7 @@
   }
 
   .gamesItemArt {
-    flex: 1 1 32%;
+    flex: 1 1 25%;
   }
 }
 
@@ -291,14 +295,15 @@
     margin-top: 2%;
   }
 
-  .gameImageGames, .gameImageArt {
+  .gameImageGames,
+  .gameImageArt {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: space-around;
     align-content: center;
     align-items: center;
-    background-color: rgba(0,0,0,.95);
+    background-color: rgba(0, 0, 0, .95);
     width: 100%;
   }
 }
@@ -310,6 +315,4 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
-
-}
+@media only screen and (min-width: 1200px) {}

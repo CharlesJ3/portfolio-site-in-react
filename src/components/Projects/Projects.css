@@ -59,59 +59,50 @@
 }
 
 @keyframes codepenNotice {
-  0% {
+  0% {}
 
-  }
+  25% {}
 
-  25% {
+  50% {}
 
-  }
+  75% {}
 
-  50% {
-
-  }
-
-  75% {
-
-  }
-
-  100% {
-
-  }
+  100% {}
 }
 
 @keyframes movingBG {
-	0% {
-		background-color: rgba(237,55,117, .84);
-	}
-	50% {
-		background-color: rgba(27,55,117, .4);
-	}
-	100% {
-		background-color: rgba(237,55,117, .84);
-	}
+  0% {
+    background-color: rgba(237, 55, 117, .84);
+  }
+
+  50% {
+    background-color: rgba(27, 55, 117, .4);
+  }
+
+  100% {
+    background-color: rgba(237, 55, 117, .84);
+  }
 }
+
 @keyframes clipfun {
-	0% {
-		background-color: rgba(237,55,117, .84);
-	}
-	50% {
-		background-color: rgba(27,55,117, .4);
-	}
-	100% {
-		background-color: rgba(237,55,117, .84);
-	}
+  0% {
+    background-color: rgba(237, 55, 117, .84);
+  }
+
+  50% {
+    background-color: rgba(27, 55, 117, .4);
+  }
+
+  100% {
+    background-color: rgba(237, 55, 117, .84);
+  }
 }
 
-.transitionMe {
+.transitionMe {}
 
-}
+.projectsWrapper {}
 
-.projectsWrapper{
-
-}
-
-#projectsHeader{
+#projectsHeader {
   width: 95%;
   height: 17%;
   left: 2%;
@@ -153,10 +144,6 @@
   transition: box-shadow 2s;
 }
 
-#projectSites {
-
-}
-
 #projectSites:before {
   content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0 Sites I've Developed and Designed";
   position: absolute;
@@ -167,7 +154,7 @@
   left: 0;
   right: 0;
   font-size: 3.9rem;
-	animation: movingBG 5s ease-in infinite, clipfun 5s linear infinite;
+  animation: movingBG 5s ease-in infinite, clipfun 5s linear infinite;
   transform: scaleX(0);
   transform-origin: 0%;
   transition-property: transform;
@@ -188,7 +175,7 @@
   left: 0;
   right: 0;
   font-size: 3.9rem;
-	animation: movingBG 5s ease-in infinite, clipfun 5s linear infinite;
+  animation: movingBG 5s ease-in infinite, clipfun 5s linear infinite;
   transform: scaleX(0);
   transform-origin: 50%;
   transition-property: transform;
@@ -209,7 +196,7 @@
   left: 0;
   right: 0;
   font-size: 3.9rem;
-	animation: movingBG 5s ease-in infinite, clipfun 5s linear infinite;
+  animation: movingBG 5s ease-in infinite, clipfun 5s linear infinite;
   transform: scaleX(0);
   transform-origin: 100%;
   transition-property: transform;
@@ -220,9 +207,15 @@
   border: 1px solid deepskyblue;
 }
 
-#projectSites:hover:before, #projectSites:focus:before, #projectSites:active:before,
-#projectApps:hover:before, #projectApps:focus:before, #projectApps:active:before,
-#projectPens:hover:before, #projectPens:focus:before, #projectPens:active:before {
+#projectSites:hover:before,
+#projectSites:focus:before,
+#projectSites:active:before,
+#projectApps:hover:before,
+#projectApps:focus:before,
+#projectApps:active:before,
+#projectPens:hover:before,
+#projectPens:focus:before,
+#projectPens:active:before {
   -webkit-transform: scaleX(.35);
   transform: scaleX(.35);
 }
@@ -267,7 +260,7 @@
 
 .projectsPen {
   color: white;
-  flex: 1 1 50%;
+  flex: 1 1 80%;
   text-align: center;
   height: 22rem;
   font-size: 1.5rem;
@@ -296,7 +289,7 @@
 
 #projectSection3 {
   display: none;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
   align-items: center;
@@ -331,7 +324,7 @@
   width: 71%;
   padding: .5%;
   border-radius: 5%;
-  background: linear-gradient(to right, rgba(237,55,117, .76) 41%,rgba(25,22,221,.76) 100%,rgba(25,22,221, 0.76) 100%);
+  background: linear-gradient(to right, rgba(237, 55, 117, .76) 41%, rgba(25, 22, 221, .76) 100%, rgba(25, 22, 221, 0.76) 100%);
   border: 1px solid purple;
   animation: codepenNotice 3s linear infinite;
 }
@@ -347,7 +340,7 @@
   width: 71%;
   padding: .5%;
   border-radius: 1%;
-  background: linear-gradient(to right, rgba(237,55,117, .4) 61%,rgba(25,22,221,.4) 100%,rgba(25,22,221, 0.4) 100%);
+  background: linear-gradient(to right, rgba(237, 55, 117, .4) 61%, rgba(25, 22, 221, .4) 100%, rgba(25, 22, 221, 0.4) 100%);
   border: 1px solid deeppink;
   animation: codepenNotice 3s linear infinite;
 }
@@ -380,7 +373,17 @@
   }
 
   #projectsHeader button {
-    font-size: 1.75rem;
+    font-size: 1rem;
+  }
+
+  #projectSites:before, #projectApps:before, #projectPens:before {
+    font-size: 1.4rem;
+    height: 45%;
+  }
+
+  #codepenInfo, #codepenInfo:hover {
+    top: 19%;
+    font-size: .9rem;
   }
 }
 
@@ -392,7 +395,17 @@
   }
 
   #projectsHeader button {
-    font-size: 1.75rem;
+    font-size: 1.15rem;
+  }
+
+  #projectSites:before, #projectApps:before, #projectPens:before {
+    font-size: 1.4rem;
+    height: 40%;
+  }
+
+  #codepenInfo, #codepenInfo:hover {
+    top: 19.5%;
+    font-size: 1rem;
   }
 }
 
@@ -408,15 +421,32 @@
   }
 
 
-  #projectButtons:before {
-    font-size: 1.9rem;
+  #projectSites:before, #projectApps:before, #projectPens:before {
+    font-size: 1.8rem;
+    height: 45%;
+  }
+
+  #codepenInfo, #codepenInfo:hover {
+    top: 19.5%;
+    font-size: 1.25rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
+  #projectSites:before, #projectApps:before, #projectPens:before {
+    font-size: 2.4rem;
+    height: 50%;
+  }
 
+  #codepenInfo, #codepenInfo:hover {
+    top: 19.5%;
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-
+  #projectSites:before, #projectApps:before, #projectPens:before {
+    font-size: 3.6rem;
+    height: 65%;
+  }
 }

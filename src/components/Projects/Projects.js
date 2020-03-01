@@ -83,6 +83,36 @@ const projects = [
     link: '#',
   },{
     type: 'pens',
+    name: 'NASA Astronomy Picture of the Day',
+    img: '',
+    iFrameData: 'https://codepen.io/CharlesJ3/embed/gxebMx?height=265&theme-id=dark&default-tab=result',
+    link: '',
+  },{
+    type: 'pens',
+    name: 'Bubble Up!',
+    img: '',
+    iFrameData: 'https://codepen.io/CharlesJ3/embed/zgKvVm?height=765&theme-id=dark&default-tab=result',
+    link: '',
+  },{
+    type: 'pens',
+    name: 'Rotating Triangles',
+    img: '',
+    iFrameData: 'https://codepen.io/CharlesJ3/embed/RwbvpoL?height=265&theme-id=dark&default-tab=result',
+    link: '',
+  },{
+    type: 'pens',
+    name: 'Rain Drops',
+    img: '',
+    iFrameData: 'https://codepen.io/CharlesJ3/embed/xxKQOKK?height=265&theme-id=dark&default-tab=result',
+    link: '',
+  },{
+    type: 'pens',
+    name: 'Staring',
+    img: '',
+    iFrameData: 'https://codepen.io/CharlesJ3/embed/aboQNee?height=265&theme-id=dark&default-tab=result',
+    link: '',
+  },{
+    type: 'pens',
     name: 'Infinite Snek (for my son)',
     img: '',
     iFrameData: 'https://codepen.io/CharlesJ3/embed/VOMBQP?height=265&theme-id=dark&default-tab=result',
@@ -125,39 +155,9 @@ const projects = [
     link: '',
   },{
     type: 'pens',
-    name: 'NASA Astronomy Picture of the Day',
-    img: '',
-    iFrameData: 'https://codepen.io/CharlesJ3/embed/gxebMx?height=265&theme-id=dark&default-tab=result',
-    link: '',
-  },{
-    type: 'pens',
     name: 'Choose Your Theme!',
     img: '',
     iFrameData: 'https://codepen.io/CharlesJ3/embed/ZEzVVbz?height=265&theme-id=dark&default-tab=result',
-    link: '',
-  },{
-    type: 'pens',
-    name: 'Staring',
-    img: '',
-    iFrameData: 'https://codepen.io/CharlesJ3/embed/aboQNee?height=265&theme-id=dark&default-tab=result',
-    link: '',
-  },{
-    type: 'pens',
-    name: 'Rain Drops',
-    img: '',
-    iFrameData: 'https://codepen.io/CharlesJ3/embed/xxKQOKK?height=265&theme-id=dark&default-tab=result',
-    link: '',
-  },{
-    type: 'pens',
-    name: 'Rotating Triangles',
-    img: '',
-    iFrameData: 'https://codepen.io/CharlesJ3/embed/RwbvpoL?height=265&theme-id=dark&default-tab=result',
-    link: '',
-  },{
-    type: 'pens',
-    name: 'Bubble Up!',
-    img: '',
-    iFrameData: 'https://codepen.io/CharlesJ3/embed/zgKvVm?height=765&theme-id=dark&default-tab=result',
     link: '',
   },
 ];
@@ -260,6 +260,15 @@ const Projects = (props) => {
         <p id="codepenInfo">
           Codepen not loading? Use the <span className="rerun">Rerun</span> button to reload it!
         </p>
+
+        {/*What is this for? To reload pens automatically. Codepen doesn't like loading a million pens at once, this helps */}
+
+        {
+          (function() {
+            document.getElementsByClassName('rerun-button').dispatchEvent(new MouseEvent("click"));
+          })
+
+        }
         </div>
       </div>
     </div>

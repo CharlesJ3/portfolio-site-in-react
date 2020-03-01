@@ -51,7 +51,7 @@ const gamesAndArt = [
     name: 'Idle Weather 3D',
     img: '../images/Game Idle Weather Thumb',
     img2: '../images/Game Idle Weather Thumb.png',
-    link: '',
+    link: 'https://idle-weather.herokuapp.com/',
   },{
     type: 'art',
     name: 'Talent Tree',
